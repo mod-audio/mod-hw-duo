@@ -51,9 +51,11 @@ F 4 "CPF0603B1M0E" H 0   0   50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR066
+L bottom-board-rescue:GNDA-power #PWR066
 U 1 1 5504CF20
 P 3000 1050
+AR Path="/5504CF20" Ref="#PWR066"  Part="1" 
+AR Path="/54F72C8D/5504CF20" Ref="#PWR066"  Part="1" 
 F 0 "#PWR066" H 3000 800 60  0001 C CNN
 F 1 "GNDA" H 3000 900 60  0000 C CNN
 F 2 "" H 3000 1050 60  0000 C CNN
@@ -314,9 +316,11 @@ F 4 "UWX1C101MCL1GB" H 7450 -2700 50  0001 C CNN "MPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR067
+L bottom-board-rescue:GNDA-power #PWR067
 U 1 1 550A08DD
 P 4650 1100
+AR Path="/550A08DD" Ref="#PWR067"  Part="1" 
+AR Path="/54F72C8D/550A08DD" Ref="#PWR067"  Part="1" 
 F 0 "#PWR067" H 4650 850 50  0001 C CNN
 F 1 "GNDA" H 4650 950 50  0000 C CNN
 F 2 "" H 4650 1100 60  0000 C CNN
@@ -325,9 +329,11 @@ F 3 "" H 4650 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR068
+L bottom-board-rescue:GNDA-power #PWR068
 U 1 1 550A1EF4
 P 2450 3750
+AR Path="/550A1EF4" Ref="#PWR068"  Part="1" 
+AR Path="/54F72C8D/550A1EF4" Ref="#PWR068"  Part="1" 
 F 0 "#PWR068" H 2450 3500 50  0001 C CNN
 F 1 "GNDA" H 2450 3600 50  0000 C CNN
 F 2 "" H 2450 3750 60  0000 C CNN
@@ -336,9 +342,11 @@ F 3 "" H 2450 3750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR069
+L bottom-board-rescue:GNDA-power #PWR069
 U 1 1 550A2DDF
 P 5150 3750
+AR Path="/550A2DDF" Ref="#PWR069"  Part="1" 
+AR Path="/54F72C8D/550A2DDF" Ref="#PWR069"  Part="1" 
 F 0 "#PWR069" H 5150 3500 50  0001 C CNN
 F 1 "GNDA" H 5150 3600 50  0000 C CNN
 F 2 "" H 5150 3750 60  0000 C CNN
@@ -347,9 +355,11 @@ F 3 "" H 5150 3750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR070
+L bottom-board-rescue:GNDA-power #PWR070
 U 1 1 550AA63F
 P 9100 4550
+AR Path="/550AA63F" Ref="#PWR070"  Part="1" 
+AR Path="/54F72C8D/550AA63F" Ref="#PWR070"  Part="1" 
 F 0 "#PWR070" H 9100 4300 50  0001 C CNN
 F 1 "GNDA" H 9100 4400 50  0000 C CNN
 F 2 "" H 9100 4550 60  0000 C CNN
@@ -358,9 +368,11 @@ F 3 "" H 9100 4550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR071
+L bottom-board-rescue:GNDA-power #PWR071
 U 1 1 55100B8A
 P 3900 1850
+AR Path="/55100B8A" Ref="#PWR071"  Part="1" 
+AR Path="/54F72C8D/55100B8A" Ref="#PWR071"  Part="1" 
 F 0 "#PWR071" H 3900 1600 50  0001 C CNN
 F 1 "GNDA" H 3900 1700 50  0000 C CNN
 F 2 "" H 3900 1850 60  0000 C CNN
@@ -369,9 +381,11 @@ F 3 "" H 3900 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR072
+L bottom-board-rescue:GNDA-power #PWR072
 U 1 1 550C7ED9
 P 1850 1850
+AR Path="/550C7ED9" Ref="#PWR072"  Part="1" 
+AR Path="/54F72C8D/550C7ED9" Ref="#PWR072"  Part="1" 
 F 0 "#PWR072" H 1850 1600 50  0001 C CNN
 F 1 "GNDA" H 1850 1700 50  0000 C CNN
 F 2 "" H 1850 1850 60  0000 C CNN
@@ -428,9 +442,11 @@ F 4 "C1608C0G1H101J080AA" H 0   0   50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR073
+L bottom-board-rescue:GNDA-power #PWR073
 U 1 1 5511DD68
 P 2100 1850
+AR Path="/5511DD68" Ref="#PWR073"  Part="1" 
+AR Path="/54F72C8D/5511DD68" Ref="#PWR073"  Part="1" 
 F 0 "#PWR073" H 2100 1600 50  0001 C CNN
 F 1 "GNDA" H 2100 1700 50  0000 C CNN
 F 2 "" H 2100 1850 60  0000 C CNN
@@ -439,7 +455,7 @@ F 3 "" H 2100 1850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR074
+L bottom-board-rescue:+12VA-power #PWR074
 U 1 1 551596C1
 P 3900 850
 F 0 "#PWR074" H 3900 700 50  0001 C CNN
@@ -450,7 +466,7 @@ F 3 "" H 3900 850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR075
+L bottom-board-rescue:+12VA-power #PWR075
 U 1 1 5515A810
 P 9100 3550
 F 0 "#PWR075" H 9100 3400 50  0001 C CNN
@@ -461,7 +477,7 @@ F 3 "" H 9100 3550 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR076
+L bottom-board-rescue:+12VA-power #PWR076
 U 1 1 55160136
 P 2600 2650
 F 0 "#PWR076" H 2600 2500 50  0001 C CNN
@@ -472,7 +488,7 @@ F 3 "" H 2600 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR077
+L bottom-board-rescue:+12VA-power #PWR077
 U 1 1 55160184
 P 5000 2650
 F 0 "#PWR077" H 5000 2500 50  0001 C CNN
@@ -519,9 +535,11 @@ F 4 "CPF0603B1M0E" H -5100 2400 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR078
+L bottom-board-rescue:GNDA-power #PWR078
 U 1 1 5517BC01
 P 3050 4700
+AR Path="/5517BC01" Ref="#PWR078"  Part="1" 
+AR Path="/54F72C8D/5517BC01" Ref="#PWR078"  Part="1" 
 F 0 "#PWR078" H 3050 4450 60  0001 C CNN
 F 1 "GNDA" H 3050 4550 60  0000 C CNN
 F 2 "" H 3050 4700 60  0000 C CNN
@@ -722,9 +740,11 @@ F 4 "RMCF0603JT10K0" H -5500 1350 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR079
+L bottom-board-rescue:GNDA-power #PWR079
 U 1 1 5517BCE1
 P 2500 7400
+AR Path="/5517BCE1" Ref="#PWR079"  Part="1" 
+AR Path="/54F72C8D/5517BCE1" Ref="#PWR079"  Part="1" 
 F 0 "#PWR079" H 2500 7150 50  0001 C CNN
 F 1 "GNDA" H 2500 7250 50  0000 C CNN
 F 2 "" H 2500 7400 60  0000 C CNN
@@ -733,9 +753,11 @@ F 3 "" H 2500 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR080
+L bottom-board-rescue:GNDA-power #PWR080
 U 1 1 5517BCE7
 P 5200 7400
+AR Path="/5517BCE7" Ref="#PWR080"  Part="1" 
+AR Path="/54F72C8D/5517BCE7" Ref="#PWR080"  Part="1" 
 F 0 "#PWR080" H 5200 7150 50  0001 C CNN
 F 1 "GNDA" H 5200 7250 50  0000 C CNN
 F 2 "" H 5200 7400 60  0000 C CNN
@@ -744,9 +766,11 @@ F 3 "" H 5200 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR081
+L bottom-board-rescue:GNDA-power #PWR081
 U 1 1 5517BCED
 P 3950 5500
+AR Path="/5517BCED" Ref="#PWR081"  Part="1" 
+AR Path="/54F72C8D/5517BCED" Ref="#PWR081"  Part="1" 
 F 0 "#PWR081" H 3950 5250 50  0001 C CNN
 F 1 "GNDA" H 3950 5350 50  0000 C CNN
 F 2 "" H 3950 5500 60  0000 C CNN
@@ -755,9 +779,11 @@ F 3 "" H 3950 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR082
+L bottom-board-rescue:GNDA-power #PWR082
 U 1 1 5517BCF3
 P 1900 5500
+AR Path="/5517BCF3" Ref="#PWR082"  Part="1" 
+AR Path="/54F72C8D/5517BCF3" Ref="#PWR082"  Part="1" 
 F 0 "#PWR082" H 1900 5250 50  0001 C CNN
 F 1 "GNDA" H 1900 5350 50  0000 C CNN
 F 2 "" H 1900 5500 60  0000 C CNN
@@ -802,9 +828,11 @@ F 4 "C1608C0G1H101J080AA" H -5100 2400 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR083
+L bottom-board-rescue:GNDA-power #PWR083
 U 1 1 5517BD18
 P 2150 5500
+AR Path="/5517BD18" Ref="#PWR083"  Part="1" 
+AR Path="/54F72C8D/5517BD18" Ref="#PWR083"  Part="1" 
 F 0 "#PWR083" H 2150 5250 50  0001 C CNN
 F 1 "GNDA" H 2150 5350 50  0000 C CNN
 F 2 "" H 2150 5500 60  0000 C CNN
@@ -813,7 +841,7 @@ F 3 "" H 2150 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR084
+L bottom-board-rescue:+12VA-power #PWR084
 U 1 1 5517BD1F
 P 3950 4500
 F 0 "#PWR084" H 3950 4350 50  0001 C CNN
@@ -824,7 +852,7 @@ F 3 "" H 3950 4500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR085
+L bottom-board-rescue:+12VA-power #PWR085
 U 1 1 5517BD25
 P 2650 6300
 F 0 "#PWR085" H 2650 6150 50  0001 C CNN
@@ -835,7 +863,7 @@ F 3 "" H 2650 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR086
+L bottom-board-rescue:+12VA-power #PWR086
 U 1 1 5517BD2B
 P 5050 6300
 F 0 "#PWR086" H 5050 6150 50  0001 C CNN
@@ -906,7 +934,7 @@ F 4 "2N7002P,215" H 5300 7050 60  0001 C CNN "MPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR087
+L bottom-board-rescue:+3.3V-power #PWR087
 U 1 1 55458543
 P 5600 6650
 F 0 "#PWR087" H 5600 6500 50  0001 C CNN
@@ -929,7 +957,7 @@ F 4 "1N4148WX-TP" H -5100 2200 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR088
+L bottom-board-rescue:+3.3V-power #PWR088
 U 1 1 554DC234
 P 2050 2950
 F 0 "#PWR088" H 2050 2800 50  0001 C CNN
@@ -940,7 +968,7 @@ F 3 "" H 2050 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR089
+L bottom-board-rescue:+3.3V-power #PWR089
 U 1 1 554DE521
 P 2100 6600
 F 0 "#PWR089" H 2100 6450 50  0001 C CNN
@@ -951,7 +979,7 @@ F 3 "" H 2100 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR090
+L bottom-board-rescue:+3.3V-power #PWR090
 U 1 1 554EF964
 P 5550 3000
 F 0 "#PWR090" H 5550 2850 50  0001 C CNN
@@ -1000,11 +1028,11 @@ $EndComp
 Wire Wire Line
 	1350 1400 1500 1400
 Wire Wire Line
-	1700 1400 2400 1400
+	1700 1400 1850 1400
 Wire Wire Line
 	1850 1400 1850 1550
 Wire Wire Line
-	2600 1400 3700 1400
+	2600 1400 2800 1400
 Wire Wire Line
 	3350 1200 3350 1400
 Wire Wire Line
@@ -1014,11 +1042,11 @@ Wire Wire Line
 Wire Wire Line
 	3900 1800 3900 1850
 Wire Wire Line
-	3900 850  3900 1200
+	3900 850  3900 1000
 Wire Wire Line
-	3650 1000 4300 1000
+	3650 1000 3900 1000
 Wire Wire Line
-	2950 3050 3150 3050
+	2950 3050 3050 3050
 Wire Wire Line
 	3050 3150 3050 3050
 Wire Wire Line
@@ -1026,17 +1054,17 @@ Wire Wire Line
 Wire Wire Line
 	4150 2750 4150 2850
 Wire Wire Line
-	3450 1600 3450 2550
+	3450 1600 3450 2200
 Wire Wire Line
 	3450 1600 3700 1600
 Wire Wire Line
 	3700 2400 3450 2400
 Wire Wire Line
-	3900 2400 4450 2400
+	3900 2400 4150 2400
 Wire Wire Line
-	4300 1500 4550 1500
+	4300 1500 4450 1500
 Wire Wire Line
-	4750 1500 5000 1500
+	4750 1500 4900 1500
 Wire Wire Line
 	3700 2200 3450 2200
 Wire Wire Line
@@ -1050,7 +1078,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 2550 4150 2400
 Wire Wire Line
-	3050 3600 4550 3600
+	3050 3600 3450 3600
 Wire Wire Line
 	3050 3600 3050 3350
 Wire Wire Line
@@ -1070,17 +1098,17 @@ Wire Wire Line
 Wire Wire Line
 	5200 1500 5300 1500
 Wire Wire Line
-	9100 3850 9100 4150
+	9100 3850 9100 4000
 Wire Wire Line
 	9100 3550 9100 3650
 Wire Wire Line
-	9100 4350 9100 4550
+	9100 4350 9100 4450
 Wire Wire Line
-	8650 4000 9100 4000
+	8650 4000 8850 4000
 Wire Wire Line
 	4500 1000 4650 1000
 Wire Wire Line
-	4650 750  4650 1100
+	4650 750  4650 1000
 Wire Wire Line
 	8850 4150 8850 4000
 Wire Wire Line
@@ -1100,11 +1128,11 @@ Wire Wire Line
 Wire Wire Line
 	1400 5050 1550 5050
 Wire Wire Line
-	1750 5050 2450 5050
+	1750 5050 1900 5050
 Wire Wire Line
 	1900 5050 1900 5200
 Wire Wire Line
-	2650 5050 3750 5050
+	2650 5050 2850 5050
 Wire Wire Line
 	3400 4850 3400 5050
 Wire Wire Line
@@ -1114,25 +1142,25 @@ Wire Wire Line
 Wire Wire Line
 	3950 5450 3950 5500
 Wire Wire Line
-	3950 4500 3950 4850
+	3950 4500 3950 4650
 Wire Wire Line
-	3000 6700 3200 6700
+	3000 6700 3100 6700
 Wire Wire Line
 	3100 6800 3100 6700
 Wire Wire Line
 	3500 6400 3500 6500
 Wire Wire Line
-	3500 5250 3500 6200
+	3500 5250 3500 5850
 Wire Wire Line
 	3500 5250 3750 5250
 Wire Wire Line
 	3750 6050 3500 6050
 Wire Wire Line
-	3950 6050 4500 6050
+	3950 6050 4200 6050
 Wire Wire Line
-	4350 5150 4600 5150
+	4350 5150 4500 5150
 Wire Wire Line
-	4800 5150 5050 5150
+	4800 5150 4950 5150
 Wire Wire Line
 	3750 5850 3500 5850
 Wire Wire Line
@@ -1146,7 +1174,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 6200 4200 6050
 Wire Wire Line
-	3100 7250 4600 7250
+	3100 7250 3500 7250
 Wire Wire Line
 	3100 7250 3100 7000
 Wire Wire Line
@@ -1184,15 +1212,15 @@ Wire Wire Line
 Wire Wire Line
 	2600 2950 2600 3050
 Wire Wire Line
-	2450 3050 2750 3050
+	2450 3050 2600 3050
 Wire Wire Line
-	4450 3050 4650 3050
+	4450 3050 4550 3050
 Wire Wire Line
 	4550 3150 4550 3050
 Wire Wire Line
 	5150 3050 5150 3200
 Wire Wire Line
-	4850 3050 5150 3050
+	4850 3050 5000 3050
 Wire Wire Line
 	5000 2950 5000 3050
 Wire Wire Line
@@ -1204,7 +1232,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 6850 2500 6700
 Wire Wire Line
-	2500 6700 2800 6700
+	2500 6700 2650 6700
 Wire Wire Line
 	2650 6600 2650 6700
 Wire Wire Line
@@ -1218,13 +1246,13 @@ Wire Wire Line
 Wire Wire Line
 	2100 6600 2100 6700
 Wire Wire Line
-	4500 6700 4700 6700
+	4500 6700 4600 6700
 Wire Wire Line
 	4600 6800 4600 6700
 Wire Wire Line
 	5200 6700 5200 6850
 Wire Wire Line
-	4900 6700 5200 6700
+	4900 6700 5050 6700
 Wire Wire Line
 	5050 6600 5050 6700
 Wire Wire Line
@@ -1279,15 +1307,15 @@ Wire Wire Line
 Connection ~ 4650 1000
 Connection ~ 5600 7050
 Wire Wire Line
-	1950 7050 2200 7050
+	1950 7050 2100 7050
 Wire Wire Line
-	5500 7050 5750 7050
+	5500 7050 5600 7050
 Connection ~ 5550 3400
 Wire Wire Line
-	5450 3400 5700 3400
+	5450 3400 5550 3400
 Connection ~ 2050 3400
 Wire Wire Line
-	1900 3400 2150 3400
+	1900 3400 2050 3400
 Text GLabel 1900 3400 0    50   Input ~ 0
 LEFT_GAIN_CTRL1
 Wire Wire Line
@@ -1298,4 +1326,92 @@ Wire Wire Line
 	2100 6900 2100 7050
 Wire Wire Line
 	5600 6900 5600 7050
+Wire Wire Line
+	1850 1400 2100 1400
+Wire Wire Line
+	3350 1400 3700 1400
+Wire Wire Line
+	3900 1000 3900 1200
+Wire Wire Line
+	3900 1000 4150 1000
+Wire Wire Line
+	3050 3050 3150 3050
+Wire Wire Line
+	3450 2400 3450 2550
+Wire Wire Line
+	3450 2200 3450 2400
+Wire Wire Line
+	4450 1500 4550 1500
+Wire Wire Line
+	4900 1500 5000 1500
+Wire Wire Line
+	4150 2400 4450 2400
+Wire Wire Line
+	4150 3600 4550 3600
+Wire Wire Line
+	3450 3600 3800 3600
+Wire Wire Line
+	9100 4000 9100 4150
+Wire Wire Line
+	8850 4000 9100 4000
+Wire Wire Line
+	9100 4450 9100 4550
+Wire Wire Line
+	2800 1400 3350 1400
+Wire Wire Line
+	2100 1400 2400 1400
+Wire Wire Line
+	1900 5050 2150 5050
+Wire Wire Line
+	3400 5050 3750 5050
+Wire Wire Line
+	3950 4650 3950 4850
+Wire Wire Line
+	3100 6700 3200 6700
+Wire Wire Line
+	3500 6050 3500 6200
+Wire Wire Line
+	3500 5850 3500 6050
+Wire Wire Line
+	4500 5150 4600 5150
+Wire Wire Line
+	4950 5150 5050 5150
+Wire Wire Line
+	4200 6050 4500 6050
+Wire Wire Line
+	4200 7250 4600 7250
+Wire Wire Line
+	3500 7250 3850 7250
+Wire Wire Line
+	2850 5050 3400 5050
+Wire Wire Line
+	2150 5050 2450 5050
+Wire Wire Line
+	2600 3050 2750 3050
+Wire Wire Line
+	4550 3050 4650 3050
+Wire Wire Line
+	5000 3050 5150 3050
+Wire Wire Line
+	3800 3600 4150 3600
+Wire Wire Line
+	2650 6700 2800 6700
+Wire Wire Line
+	3850 7250 4200 7250
+Wire Wire Line
+	2100 7050 2200 7050
+Wire Wire Line
+	4600 6700 4700 6700
+Wire Wire Line
+	5050 6700 5200 6700
+Wire Wire Line
+	4150 1000 4300 1000
+Wire Wire Line
+	4650 1000 4650 1100
+Wire Wire Line
+	5600 7050 5750 7050
+Wire Wire Line
+	5550 3400 5700 3400
+Wire Wire Line
+	2050 3400 2150 3400
 $EndSCHEMATC

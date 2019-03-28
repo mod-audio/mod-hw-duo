@@ -63,7 +63,7 @@ F 4 "C1608X7R1E104K080AA" H 800 1000 50  0001 C CNN "MPN"
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR0144
+L bottom-board-rescue:GNDD-power #PWR0144
 U 1 1 550C7BE5
 P 5850 2800
 F 0 "#PWR0144" H 5850 2550 50  0001 C CNN
@@ -74,7 +74,7 @@ F 3 "" H 5850 2800 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0145
+L bottom-board-rescue:GNDD-power #PWR0145
 U 1 1 550C7C57
 P 5500 4450
 F 0 "#PWR0145" H 5500 4200 50  0001 C CNN
@@ -121,7 +121,7 @@ F 4 "ISL83491IBZ" H 100 1000 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0146
+L bottom-board-rescue:+3.3V-power #PWR0146
 U 1 1 551A1FF5
 P 5300 2650
 F 0 "#PWR0146" H 5300 2500 50  0001 C CNN
@@ -178,21 +178,21 @@ RS485_RX_LED
 Wire Wire Line
 	4750 3300 4900 3300
 Wire Wire Line
-	4700 3800 4900 3800
+	4700 3800 4800 3800
 Wire Wire Line
 	5850 2800 5850 2750
 Wire Wire Line
 	5850 2750 5750 2750
 Wire Wire Line
-	4350 3300 4550 3300
+	4350 3300 4450 3300
 Wire Wire Line
 	4350 3800 4500 3800
 Wire Wire Line
-	5300 2650 5300 2900
+	5300 2650 5300 2750
 Wire Wire Line
 	5200 2900 5200 2750
 Wire Wire Line
-	5500 4300 5500 4450
+	5500 4300 5500 4400
 Wire Wire Line
 	5600 4300 5600 4400
 Wire Wire Line
@@ -202,13 +202,13 @@ Wire Wire Line
 Wire Wire Line
 	5900 3400 6000 3400
 Wire Wire Line
-	6450 3150 6950 3150
+	6450 3150 6650 3150
 Wire Wire Line
 	6450 3150 6450 3200
 Wire Wire Line
 	6450 3200 6200 3200
 Wire Wire Line
-	6450 3450 6950 3450
+	6450 3450 6650 3450
 Wire Wire Line
 	6450 3450 6450 3400
 Wire Wire Line
@@ -226,9 +226,9 @@ Wire Wire Line
 Wire Wire Line
 	6450 3900 6600 3900
 Wire Wire Line
-	4350 3500 4900 3500
+	4350 3500 4800 3500
 Wire Wire Line
-	4350 4000 4900 4000
+	4350 4000 4800 4000
 Connection ~ 5300 2750
 Connection ~ 5500 4400
 Connection ~ 6650 3450
@@ -238,7 +238,7 @@ Connection ~ 4800 3800
 Wire Wire Line
 	4800 3650 4800 3800
 $Comp
-L power:GNDD #PWR0147
+L bottom-board-rescue:GNDD-power #PWR0147
 U 1 1 5522D8E7
 P 2850 4300
 F 0 "#PWR0147" H 2850 4050 50  0001 C CNN
@@ -279,7 +279,7 @@ F 4 "RMCF0603JT10K0" H -400 1350 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0148
+L bottom-board-rescue:GNDD-power #PWR0148
 U 1 1 5522FFC1
 P 3350 3400
 F 0 "#PWR0148" H 3350 3150 50  0001 C CNN
@@ -313,28 +313,15 @@ F 4 "BSS84" H 2950 3650 60  0001 C CNN "MPN"
 	1    2950 3650
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:+3.3V #PWR0149
-U 1 1 55FA5E06
-P 3350 2450
-F 0 "#PWR0149" H 3350 2300 50  0001 C CNN
-F 1 "+3.3V" H 3350 2590 50  0000 C CNN
-F 2 "" H 3350 2450 60  0000 C CNN
-F 3 "" H 3350 2450 60  0000 C CNN
-	1    3350 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3350 2450 3350 2550
-Wire Wire Line
-	3350 2950 3350 3150
+	3350 2950 3350 3050
 Wire Wire Line
 	3350 3350 3350 3400
 Wire Wire Line
 	3200 3050 3350 3050
 Connection ~ 3350 3050
 $Comp
-L power:+3.3V #PWR0150
+L bottom-board-rescue:+3.3V-power #PWR0150
 U 1 1 55FA859A
 P 2850 3350
 F 0 "#PWR0150" H 2850 3200 50  0001 C CNN
@@ -349,7 +336,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 4250 2850 4300
 Wire Wire Line
-	2850 3850 2850 4050
+	2850 3850 2850 3950
 Wire Wire Line
 	2700 3950 2850 3950
 Connection ~ 2850 3950
@@ -381,7 +368,7 @@ Wire Wire Line
 	4800 4100 4800 4000
 Connection ~ 4800 4000
 $Comp
-L power:GNDD #PWR0151
+L bottom-board-rescue:GNDD-power #PWR0151
 U 1 1 55FB1C75
 P 4800 4350
 F 0 "#PWR0151" H 4800 4100 50  0001 C CNN
@@ -394,12 +381,12 @@ $EndComp
 Wire Wire Line
 	4800 4300 4800 4350
 Wire Wire Line
-	5200 2750 5550 2750
+	5200 2750 5300 2750
 Wire Wire Line
 	4800 3100 4800 3500
 Connection ~ 4800 3500
 $Comp
-L power:+3.3V #PWR0152
+L bottom-board-rescue:+3.3V-power #PWR0152
 U 1 1 55FB2896
 P 4800 2800
 F 0 "#PWR0152" H 4800 2650 50  0001 C CNN
@@ -411,4 +398,39 @@ F 3 "" H 4800 2800 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4800 2800 4800 2900
+Wire Wire Line
+	3350 2550 3350 2450
+Wire Wire Line
+	5300 2750 5300 2900
+Wire Wire Line
+	5300 2750 5550 2750
+Wire Wire Line
+	5500 4400 5500 4450
+Wire Wire Line
+	6650 3450 6950 3450
+Wire Wire Line
+	6650 3150 6950 3150
+Wire Wire Line
+	4450 3300 4550 3300
+Wire Wire Line
+	4800 3800 4900 3800
+Wire Wire Line
+	3350 3050 3350 3150
+Wire Wire Line
+	2850 3950 2850 4050
+Wire Wire Line
+	4800 4000 4900 4000
+Wire Wire Line
+	4800 3500 4900 3500
+$Comp
+L bottom-board-rescue:+3.3V-power #PWR0149
+U 1 1 5C959C67
+P 3350 2450
+F 0 "#PWR0149" H 3350 2300 50  0001 C CNN
+F 1 "+3.3V" H 3350 2590 50  0000 C CNN
+F 2 "" H 3350 2450 60  0000 C CNN
+F 3 "" H 3350 2450 60  0000 C CNN
+	1    3350 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,12 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:conn
-LIBS:regul
-LIBS:74xgxx
-LIBS:local-components
+EESchema Schematic File Version 4
 LIBS:top-board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8

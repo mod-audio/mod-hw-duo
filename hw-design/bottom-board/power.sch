@@ -75,31 +75,7 @@ F 4 "C1608X7R1E104K080AA" H 1200 250 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L bottom-board-rescue:D D1
-U 1 1 55022E7A
-P 3650 2850
-F 0 "D1" H 3650 2950 50  0000 C CNN
-F 1 "B130LB" H 3650 2750 50  0000 C CNN
-F 2 "Diodes_SMD:Diode-SMB_Standard" H 3650 2850 60  0001 C CNN
-F 3 "" H 3650 2850 60  0000 C CNN
-F 4 "B130LB-13-F" H 800 300 50  0001 C CNN "MPN"
-	1    3650 2850
-	-1   0    0    1   
-$EndComp
-$Comp
-L bottom-board-rescue:D D2
-U 1 1 5502333C
-P 3650 4650
-F 0 "D2" H 3650 4750 50  0000 C CNN
-F 1 "B130LB" H 3650 4550 50  0000 C CNN
-F 2 "Diodes_SMD:Diode-SMB_Standard" H 3650 4650 60  0001 C CNN
-F 3 "" H 3650 4650 60  0000 C CNN
-F 4 "B130LB-13-F" H 800 300 50  0001 C CNN "MPN"
-	1    3650 4650
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5VA #PWR01
+L bottom-board-rescue:+5VA-power #PWR01
 U 1 1 5506CD3D
 P 8550 2650
 F 0 "#PWR01" H 8550 2500 50  0001 C CNN
@@ -110,7 +86,7 @@ F 3 "" H 8550 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR02
+L bottom-board-rescue:+5V-power #PWR02
 U 1 1 5506DB64
 P 6100 4500
 F 0 "#PWR02" H 6100 4350 50  0001 C CNN
@@ -133,21 +109,11 @@ F 4 "16PX2200MEFC10X20" H 800 250 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L bottom-board-rescue:CP_Small C11
-U 1 1 5506FA02
-P 8350 3050
-F 0 "C11" H 8375 3150 50  0000 L CNN
-F 1 "100uF" H 8375 2950 50  0000 L CNN
-F 2 "Capacitors_SMD:c_elec_6.3x5.3" H 8388 2900 30  0001 C CNN
-F 3 "" H 8350 3050 60  0000 C CNN
-F 4 "UWX1C101MCL1GB" H 1200 250 50  0001 C CNN "MPN"
-	1    8350 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR03
+L bottom-board-rescue:GNDA-power #PWR03
 U 1 1 55093B7C
 P 3950 3200
+AR Path="/55093B7C" Ref="#PWR03"  Part="1" 
+AR Path="/54F7244B/55093B7C" Ref="#PWR03"  Part="1" 
 F 0 "#PWR03" H 3950 2950 50  0001 C CNN
 F 1 "GNDA" H 3950 3050 50  0000 C CNN
 F 2 "" H 3950 3200 60  0000 C CNN
@@ -156,9 +122,11 @@ F 3 "" H 3950 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR04
+L bottom-board-rescue:GNDA-power #PWR04
 U 1 1 55093C4B
 P 4300 3200
+AR Path="/55093C4B" Ref="#PWR04"  Part="1" 
+AR Path="/54F7244B/55093C4B" Ref="#PWR04"  Part="1" 
 F 0 "#PWR04" H 4300 2950 50  0001 C CNN
 F 1 "GNDA" H 4300 3050 50  0000 C CNN
 F 2 "" H 4300 3200 60  0000 C CNN
@@ -167,9 +135,11 @@ F 3 "" H 4300 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR05
+L bottom-board-rescue:GNDA-power #PWR05
 U 1 1 5509405B
 P 6850 3200
+AR Path="/5509405B" Ref="#PWR05"  Part="1" 
+AR Path="/54F7244B/5509405B" Ref="#PWR05"  Part="1" 
 F 0 "#PWR05" H 6850 2950 50  0001 C CNN
 F 1 "GNDA" H 6850 3050 50  0000 C CNN
 F 2 "" H 6850 3200 60  0000 C CNN
@@ -178,9 +148,11 @@ F 3 "" H 6850 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR06
+L bottom-board-rescue:GNDA-power #PWR06
 U 1 1 5509466E
 P 8000 3200
+AR Path="/5509466E" Ref="#PWR06"  Part="1" 
+AR Path="/54F7244B/5509466E" Ref="#PWR06"  Part="1" 
 F 0 "#PWR06" H 8000 2950 50  0001 C CNN
 F 1 "GNDA" H 8000 3050 50  0000 C CNN
 F 2 "" H 8000 3200 60  0000 C CNN
@@ -189,9 +161,11 @@ F 3 "" H 8000 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR07
+L bottom-board-rescue:GNDA-power #PWR07
 U 1 1 55094B3B
 P 8350 3200
+AR Path="/55094B3B" Ref="#PWR07"  Part="1" 
+AR Path="/54F7244B/55094B3B" Ref="#PWR07"  Part="1" 
 F 0 "#PWR07" H 8350 2950 50  0001 C CNN
 F 1 "GNDA" H 8350 3050 50  0000 C CNN
 F 2 "" H 8350 3200 60  0000 C CNN
@@ -200,9 +174,11 @@ F 3 "" H 8350 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR08
+L bottom-board-rescue:GNDA-power #PWR08
 U 1 1 550CD841
 P 7450 3250
+AR Path="/550CD841" Ref="#PWR08"  Part="1" 
+AR Path="/54F7244B/550CD841" Ref="#PWR08"  Part="1" 
 F 0 "#PWR08" H 7450 3000 50  0001 C CNN
 F 1 "GNDA" H 7450 3100 50  0000 C CNN
 F 2 "" H 7450 3250 60  0000 C CNN
@@ -235,9 +211,11 @@ F 4 "16PX2200MEFC10X20" H 800 250 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR09
+L bottom-board-rescue:GNDA-power #PWR09
 U 1 1 550E1EAE
 P 5300 3200
+AR Path="/550E1EAE" Ref="#PWR09"  Part="1" 
+AR Path="/54F7244B/550E1EAE" Ref="#PWR09"  Part="1" 
 F 0 "#PWR09" H 5300 2950 50  0001 C CNN
 F 1 "GNDA" H 5300 3050 50  0000 C CNN
 F 2 "" H 5300 3200 60  0000 C CNN
@@ -246,9 +224,11 @@ F 3 "" H 5300 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR010
+L bottom-board-rescue:GNDA-power #PWR010
 U 1 1 550E1EB4
 P 5650 3200
+AR Path="/550E1EB4" Ref="#PWR010"  Part="1" 
+AR Path="/54F7244B/550E1EB4" Ref="#PWR010"  Part="1" 
 F 0 "#PWR010" H 5650 2950 50  0001 C CNN
 F 1 "GNDA" H 5650 3050 50  0000 C CNN
 F 2 "" H 5650 3200 60  0000 C CNN
@@ -269,7 +249,7 @@ F 4 "C1608X7R1E104K080AA" H -1600 250 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR011
+L bottom-board-rescue:GNDD-power #PWR011
 U 1 1 551387EC
 P 5500 5000
 F 0 "#PWR011" H 5500 4750 50  0001 C CNN
@@ -280,7 +260,7 @@ F 3 "" H 5500 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR012
+L bottom-board-rescue:GNDD-power #PWR012
 U 1 1 551387F2
 P 5850 5000
 F 0 "#PWR012" H 5850 4750 50  0001 C CNN
@@ -291,7 +271,7 @@ F 3 "" H 5850 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR013
+L bottom-board-rescue:GNDD-power #PWR013
 U 1 1 55145AAF
 P 4950 5000
 F 0 "#PWR013" H 4950 4750 50  0001 C CNN
@@ -302,7 +282,7 @@ F 3 "" H 4950 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR014
+L bottom-board-rescue:GNDD-power #PWR014
 U 1 1 55145B26
 P 4300 5000
 F 0 "#PWR014" H 4300 4750 50  0001 C CNN
@@ -313,7 +293,7 @@ F 3 "" H 4300 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR015
+L bottom-board-rescue:+12VA-power #PWR015
 U 1 1 5515042E
 P 6000 2650
 F 0 "#PWR015" H 6000 2500 50  0001 C CNN
@@ -324,7 +304,7 @@ F 3 "" H 6000 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12VA #PWR018
+L bottom-board-rescue:+12VA-power #PWR018
 U 1 1 55167A27
 P 4950 1300
 F 0 "#PWR018" H 4950 1150 50  0001 C CNN
@@ -335,7 +315,7 @@ F 3 "" H 4950 1300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG019
+L bottom-board-rescue:PWR_FLAG-power #FLG019
 U 1 1 55169F5C
 P 4950 1450
 F 0 "#FLG019" H 4950 1545 50  0001 C CNN
@@ -346,9 +326,11 @@ F 3 "" H 4950 1450 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDA #PWR020
+L bottom-board-rescue:GNDA-power #PWR020
 U 1 1 55414B11
 P 6800 1350
+AR Path="/55414B11" Ref="#PWR020"  Part="1" 
+AR Path="/54F7244B/55414B11" Ref="#PWR020"  Part="1" 
 F 0 "#PWR020" H 6800 1100 50  0001 C CNN
 F 1 "GNDA" H 6800 1200 50  0000 C CNN
 F 2 "" H 6800 1350 60  0000 C CNN
@@ -357,7 +339,7 @@ F 3 "" H 6800 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR021
+L bottom-board-rescue:GNDD-power #PWR021
 U 1 1 55414E3C
 P 7500 1350
 F 0 "#PWR021" H 7500 1100 50  0001 C CNN
@@ -382,19 +364,19 @@ $EndComp
 Text GLabel 2300 3750 0    50   Input ~ 0
 POWER_INPUT
 $Comp
-L bottom-board-rescue:NCP1117ST50T3G U2
+L bottom-board-rescue:LD1117S50TR_SOT223-Regulator_Linear U2
 U 1 1 55712DAC
-P 7450 2900
-F 0 "U2" H 7500 2700 40  0000 C CNN
-F 1 "NCP1117DT50G" H 7450 3100 40  0000 C CNN
-F 2 "SMD_Packages:DPAK-2" H 7450 2900 60  0001 C CNN
-F 3 "" H 7450 2900 60  0000 C CNN
-F 4 "NCP1117DT50G" H 900 -1500 50  0001 C CNN "MPN"
-	1    7450 2900
+P 7450 2850
+F 0 "U2" H 7500 2650 40  0000 C CNN
+F 1 "LD1117S50TR_SOT223" H 7450 3050 40  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7450 2850 60  0001 C CNN
+F 3 "" H 7450 2850 60  0000 C CNN
+F 4 "NCP1117DT50G" H 900 -1550 50  0001 C CNN "MPN"
+	1    7450 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR022
+L bottom-board-rescue:+12V-power #PWR022
 U 1 1 55F9AB1A
 P 4050 4500
 F 0 "#PWR022" H 4050 4350 50  0001 C CNN
@@ -405,7 +387,7 @@ F 3 "" H 4050 4500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR023
+L bottom-board-rescue:+12V-power #PWR023
 U 1 1 55F9C19E
 P 5450 1300
 F 0 "#PWR023" H 5450 1150 50  0001 C CNN
@@ -416,7 +398,7 @@ F 3 "" H 5450 1300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG024
+L bottom-board-rescue:PWR_FLAG-power #FLG024
 U 1 1 55F9C1BA
 P 5450 1450
 F 0 "#FLG024" H 5450 1545 50  0001 C CNN
@@ -451,21 +433,23 @@ F 4 "GRM219R61E106KA12D" H 550 -500 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L bottom-board-rescue:CP_Small C8
+L bottom-board-rescue:C_Small-Device C8
 U 1 1 5660158D
 P 6500 3050
 F 0 "C8" H 6550 3150 50  0000 L CNN
 F 1 "10uF" H 6300 2950 50  0000 L CNN
-F 2 "Capacitors_SMD:c_elec_5x5.3" H 6500 3050 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6500 3050 60  0001 C CNN
 F 3 "" H 6500 3050 60  0000 C CNN
 F 4 "UWX1E100MCL1GB" H 1400 1550 50  0001 C CNN "MPN"
 	1    6500 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR025
+L bottom-board-rescue:GNDA-power #PWR025
 U 1 1 56601FC0
 P 6500 3200
+AR Path="/56601FC0" Ref="#PWR025"  Part="1" 
+AR Path="/54F7244B/56601FC0" Ref="#PWR025"  Part="1" 
 F 0 "#PWR025" H 6500 2950 50  0001 C CNN
 F 1 "GNDA" H 6500 3050 50  0000 C CNN
 F 2 "" H 6500 3200 60  0000 C CNN
@@ -492,7 +476,7 @@ F 4 "GRM219R61E106KA12D" H -1000 -500 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR026
+L bottom-board-rescue:GNDD-power #PWR026
 U 1 1 56670B2A
 P 7500 1750
 F 0 "#PWR026" H 7500 1500 50  0001 C CNN
@@ -503,9 +487,11 @@ F 3 "" H 7500 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR027
+L bottom-board-rescue:GNDA-power #PWR027
 U 1 1 56670B24
 P 6800 1750
+AR Path="/56670B24" Ref="#PWR027"  Part="1" 
+AR Path="/54F7244B/56670B24" Ref="#PWR027"  Part="1" 
 F 0 "#PWR027" H 6800 1500 50  0001 C CNN
 F 1 "GNDA" H 6800 1600 50  0000 C CNN
 F 2 "" H 6800 1750 60  0000 C CNN
@@ -532,13 +518,9 @@ Wire Wire Line
 Wire Wire Line
 	6850 3150 6850 3200
 Wire Wire Line
-	7450 3150 7450 3250
-Wire Wire Line
 	8000 3150 8000 3200
 Wire Wire Line
 	8350 3150 8350 3200
-Wire Wire Line
-	7850 2850 8000 2850
 Wire Wire Line
 	8550 2850 8550 2650
 Wire Wire Line
@@ -626,7 +608,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 1300 4450 1450
 $Comp
-L power:GNDD #PWR028
+L bottom-board-rescue:GNDD-power #PWR028
 U 1 1 55167664
 P 4450 1450
 F 0 "#PWR028" H 4450 1200 50  0001 C CNN
@@ -637,7 +619,7 @@ F 3 "" H 4450 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG029
+L bottom-board-rescue:PWR_FLAG-power #FLG029
 U 1 1 5516947D
 P 4450 1300
 F 0 "#FLG029" H 4450 1395 50  0001 C CNN
@@ -653,8 +635,6 @@ Wire Wire Line
 	4300 2850 4450 2850
 Wire Wire Line
 	6000 2850 6500 2850
-Wire Wire Line
-	6850 2850 7050 2850
 Wire Wire Line
 	8000 2850 8350 2850
 Wire Wire Line
@@ -675,4 +655,68 @@ Wire Wire Line
 	4050 4650 4300 4650
 Wire Wire Line
 	6500 2850 6850 2850
+$Comp
+L bottom-board-rescue:+3V3-power #PWR0173
+U 1 1 5C95A933
+P 5700 1300
+F 0 "#PWR0173" H 5700 1150 50  0001 C CNN
+F 1 "+3V3" H 5715 1473 50  0000 C CNN
+F 2 "" H 5700 1300 50  0001 C CNN
+F 3 "" H 5700 1300 50  0001 C CNN
+	1    5700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L bottom-board-rescue:PWR_FLAG-power #FLG0101
+U 1 1 5C95A969
+P 5700 1450
+F 0 "#FLG0101" H 5700 1545 50  0001 C CNN
+F 1 "PWR_FLAG" H 5700 1630 50  0000 C CNN
+F 2 "" H 5700 1450 60  0000 C CNN
+F 3 "" H 5700 1450 60  0000 C CNN
+	1    5700 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 1300 5700 1450
+$Comp
+L bottom-board-rescue:D_Schottky-Device D1
+U 1 1 5C9A22B7
+P 3650 2850
+F 0 "D1" H 3650 2634 50  0000 C CNN
+F 1 "MBR230" H 3650 2725 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3650 2850 50  0001 C CNN
+F 3 "~" H 3650 2850 50  0001 C CNN
+	1    3650 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L bottom-board-rescue:D_Schottky-Device D2
+U 1 1 5C9A23E3
+P 3650 4650
+F 0 "D2" H 3650 4434 50  0000 C CNN
+F 1 "MBR230" H 3650 4525 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3650 4650 50  0001 C CNN
+F 3 "~" H 3650 4650 50  0001 C CNN
+	1    3650 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 2850 7150 2850
+Wire Wire Line
+	7750 2850 8000 2850
+Wire Wire Line
+	7450 3150 7450 3250
+$Comp
+L bottom-board-rescue:C_Small-Device C11
+U 1 1 5C9A5B72
+P 8350 3050
+F 0 "C11" H 8400 3150 50  0000 L CNN
+F 1 "10uF" H 8150 2950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8350 3050 60  0001 C CNN
+F 3 "" H 8350 3050 60  0000 C CNN
+F 4 "UWX1E100MCL1GB" H 3250 1550 50  0001 C CNN "MPN"
+	1    8350 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

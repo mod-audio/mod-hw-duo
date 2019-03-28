@@ -1,6 +1,6 @@
-update=Fri 15 Dec 2017 09:31:17 AM -02
+update=Tue 19 Mar 2019 11:29:49 AM CET
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -30,12 +30,4 @@ BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
 [eeschema]
 version=1
-LibDir=../../../kicad-stuff/kicad-library-ricardocrudo/library;../lib/symbols
-[eeschema/libraries]
-LibName1=top-board-rescue
-LibName2=power
-LibName3=device
-LibName4=conn
-LibName5=regul
-LibName6=74xgxx
-LibName7=local-components
+LibDir=

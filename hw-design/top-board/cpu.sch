@@ -1,12 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:conn
-LIBS:regul
-LIBS:74xgxx
-LIBS:local-components
+EESchema Schematic File Version 4
 LIBS:top-board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -21,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LPC1759FBD80 U4
+L local-components:LPC1759FBD80 U4
 U 1 1 55528434
 P 7250 3950
 F 0 "U4" H 6550 6050 50  0000 C CNN
@@ -33,7 +27,7 @@ F 4 "LPC1759FBD80,551" H 550 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR014
+L top-board-rescue:GNDD #PWR014
 U 1 1 555285E7
 P 6750 6300
 F 0 "#PWR014" H 6750 6050 50  0001 C CNN
@@ -44,7 +38,7 @@ F 3 "" H 6750 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR015
+L top-board-rescue:GNDD #PWR015
 U 1 1 55528602
 P 7550 6300
 F 0 "#PWR015" H 7550 6050 50  0001 C CNN
@@ -55,7 +49,7 @@ F 3 "" H 7550 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR016
+L top-board-rescue:+3.3V #PWR016
 U 1 1 55528786
 P 9050 5600
 F 0 "#PWR016" H 9050 5450 50  0001 C CNN
@@ -66,7 +60,7 @@ F 3 "" H 9050 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C16
+L top-board-rescue:C C16
 U 1 1 5552879E
 P 9050 5850
 F 0 "C16" H 9075 5950 50  0000 L CNN
@@ -78,7 +72,7 @@ F 4 "C1608X7R1E104K080AA" H 950 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR017
+L top-board-rescue:GNDD #PWR017
 U 1 1 5552888B
 P 8900 6100
 F 0 "#PWR017" H 8900 5850 50  0001 C CNN
@@ -89,7 +83,7 @@ F 3 "" H 8900 6100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C9
+L top-board-rescue:C C9
 U 1 1 555289F5
 P 5600 1200
 F 0 "C9" H 5625 1300 50  0000 L CNN
@@ -101,7 +95,7 @@ F 4 "C1608X7R1E104K080AA" H 400 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C10
+L top-board-rescue:C C10
 U 1 1 55528C0F
 P 5900 1200
 F 0 "C10" H 5925 1300 50  0000 L CNN
@@ -113,7 +107,7 @@ F 4 "C1608X7R1E104K080AA" H 450 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C11
+L top-board-rescue:C C11
 U 1 1 55528C35
 P 6200 1200
 F 0 "C11" H 6225 1300 50  0000 L CNN
@@ -125,7 +119,7 @@ F 4 "C1608X7R1E104K080AA" H 500 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C12
+L top-board-rescue:C C12
 U 1 1 55528CCE
 P 6500 1200
 F 0 "C12" H 6525 1300 50  0000 L CNN
@@ -137,7 +131,7 @@ F 4 "C1608X7R1E104K080AA" H 550 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C15
+L top-board-rescue:C C15
 U 1 1 55528CF2
 P 8650 1200
 F 0 "C15" H 8675 1300 50  0000 L CNN
@@ -149,7 +143,7 @@ F 4 "C1608X7R1E104K080AA" H 800 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C14
+L top-board-rescue:C C14
 U 1 1 55528D80
 P 8350 1200
 F 0 "C14" H 8375 1300 50  0000 L CNN
@@ -161,7 +155,7 @@ F 4 "C1608X7R1E104K080AA" H 750 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C13
+L top-board-rescue:C C13
 U 1 1 55528DA8
 P 8050 1200
 F 0 "C13" H 8075 1300 50  0000 L CNN
@@ -173,7 +167,7 @@ F 4 "C1608X7R1E104K080AA" H 700 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR018
+L top-board-rescue:GNDD #PWR018
 U 1 1 55528F85
 P 6500 1550
 F 0 "#PWR018" H 6500 1300 50  0001 C CNN
@@ -184,7 +178,7 @@ F 3 "" H 6500 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR019
+L top-board-rescue:+3.3V #PWR019
 U 1 1 555294F0
 P 6500 800
 F 0 "#PWR019" H 6500 650 50  0001 C CNN
@@ -195,7 +189,7 @@ F 3 "" H 6500 800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR020
+L top-board-rescue:+3.3V #PWR020
 U 1 1 5552A974
 P 8650 800
 F 0 "#PWR020" H 8650 650 50  0001 C CNN
@@ -206,7 +200,7 @@ F 3 "" H 8650 800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR021
+L top-board-rescue:GNDD #PWR021
 U 1 1 5552AA32
 P 8650 1550
 F 0 "#PWR021" H 8650 1300 50  0001 C CNN
@@ -217,7 +211,7 @@ F 3 "" H 8650 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR022
+L top-board-rescue:+3.3V #PWR022
 U 1 1 5552AC13
 P 6850 1550
 F 0 "#PWR022" H 6850 1400 50  0001 C CNN
@@ -228,7 +222,7 @@ F 3 "" H 6850 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR023
+L top-board-rescue:+3.3V #PWR023
 U 1 1 5552AD6D
 P 7350 1550
 F 0 "#PWR023" H 7350 1400 50  0001 C CNN
@@ -239,7 +233,7 @@ F 3 "" H 7350 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR024
+L top-board-rescue:+3.3V #PWR024
 U 1 1 5552AE14
 P 7650 1550
 F 0 "#PWR024" H 7650 1400 50  0001 C CNN
@@ -250,7 +244,7 @@ F 3 "" H 7650 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR025
+L top-board-rescue:+3.3V #PWR025
 U 1 1 5552B0DD
 P 5500 5600
 F 0 "#PWR025" H 5500 5450 50  0001 C CNN
@@ -261,7 +255,7 @@ F 3 "" H 5500 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal_Small Y1
+L top-board-rescue:Crystal_Small Y1
 U 1 1 5552B69D
 P 5400 5100
 F 0 "Y1" H 5400 5200 50  0000 C CNN
@@ -273,7 +267,7 @@ F 4 "FOXSDLF/100-20" H 5400 5100 60  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L C C7
+L top-board-rescue:C C7
 U 1 1 5552BBA9
 P 4850 5450
 F 0 "C7" H 4750 5550 50  0000 L CNN
@@ -285,7 +279,7 @@ F 4 "C1608C0G1H390J080AA" H 150 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C8
+L top-board-rescue:C C8
 U 1 1 5552BC14
 P 5150 5450
 F 0 "C8" H 5175 5550 50  0000 L CNN
@@ -297,7 +291,7 @@ F 4 "C1608C0G1H390J080AA" H 150 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR026
+L top-board-rescue:GNDD #PWR026
 U 1 1 5552C790
 P 4850 5700
 F 0 "#PWR026" H 4850 5450 50  0001 C CNN
@@ -308,7 +302,7 @@ F 3 "" H 4850 5700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR027
+L top-board-rescue:GNDD #PWR027
 U 1 1 5552C840
 P 5150 5700
 F 0 "#PWR027" H 5150 5450 50  0001 C CNN
@@ -319,7 +313,7 @@ F 3 "" H 5150 5700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X10 P4
+L top-board-rescue:CONN_02X10 P4
 U 1 1 5555C389
 P 2750 4250
 F 0 "P4" H 2750 4800 50  0000 C CNN
@@ -331,7 +325,7 @@ F 4 "68021-220HLF" H 600 850 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R12
+L top-board-rescue:R R12
 U 1 1 55569C10
 P 9950 4900
 F 0 "R12" V 10000 5000 50  0000 L CNN
@@ -343,7 +337,7 @@ F 4 "RMCF0603JT10K0" H 1250 -50 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR028
+L top-board-rescue:+3.3V #PWR028
 U 1 1 55569FE3
 P 9950 4650
 F 0 "#PWR028" H 9950 4500 50  0001 C CNN
@@ -354,7 +348,7 @@ F 3 "" H 9950 4650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X05 P2
+L top-board-rescue:CONN_02X05 P2
 U 1 1 5556D1BD
 P 1700 6350
 F 0 "P2" H 1700 6650 50  0000 C CNN
@@ -365,7 +359,7 @@ F 3 "" H 1700 5150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR029
+L top-board-rescue:GNDD #PWR029
 U 1 1 5556D3DF
 P 1350 6650
 F 0 "#PWR029" H 1350 6400 50  0001 C CNN
@@ -376,7 +370,7 @@ F 3 "" H 1350 6650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L top-board-rescue:R R5
 U 1 1 5556D746
 P 2050 5900
 F 0 "R5" V 2100 6000 50  0000 L CNN
@@ -388,7 +382,7 @@ F 4 "RMCF0603JT10K0" H 0   900 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R7
+L top-board-rescue:R R7
 U 1 1 5556DB27
 P 2150 5900
 F 0 "R7" V 2200 6000 50  0000 L CNN
@@ -400,7 +394,7 @@ F 4 "RMCF0603JT10K0" H 0   900 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L top-board-rescue:R R10
 U 1 1 5556DB65
 P 2400 5900
 F 0 "R10" V 2450 6000 50  0000 L CNN
@@ -412,7 +406,7 @@ F 4 "RMCF0603JT10K0" H 150 900 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R8
+L top-board-rescue:R R8
 U 1 1 5556DB9D
 P 2250 5900
 F 0 "R8" V 2300 6000 50  0000 L CNN
@@ -424,7 +418,7 @@ F 4 "RMCF0603JT10K0" H -100 900 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR030
+L top-board-rescue:+3.3V #PWR030
 U 1 1 5556E77E
 P 2050 5500
 F 0 "#PWR030" H 2050 5350 50  0001 C CNN
@@ -435,7 +429,7 @@ F 3 "" H 2050 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR031
+L top-board-rescue:GNDD #PWR031
 U 1 1 5557BBA5
 P 3100 4800
 F 0 "#PWR031" H 3100 4550 50  0001 C CNN
@@ -446,7 +440,7 @@ F 3 "" H 3100 4800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR032
+L top-board-rescue:GNDD #PWR032
 U 1 1 5557C69D
 P 2400 4800
 F 0 "#PWR032" H 2400 4550 50  0001 C CNN
@@ -457,7 +451,7 @@ F 3 "" H 2400 4800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW1
+L top-board-rescue:SW_PUSH SW1
 U 1 1 555AC0FD
 P 3900 1950
 F 0 "SW1" H 4050 2060 50  0000 C CNN
@@ -631,7 +625,7 @@ NoConn ~ 8850 2150
 NoConn ~ 8850 3850
 NoConn ~ 8850 2050
 $Comp
-L R R4
+L top-board-rescue:R R4
 U 1 1 55F055B6
 P 2000 3550
 F 0 "R4" V 2050 3650 50  0000 L CNN
@@ -643,7 +637,7 @@ F 4 "RMCF0603JT100K" H -6700 -1400 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R6
+L top-board-rescue:R R6
 U 1 1 55F06095
 P 2150 3550
 F 0 "R6" V 2200 3650 50  0000 L CNN
@@ -655,7 +649,7 @@ F 4 "RMCF0603JT100K" H -6550 -1400 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR033
+L top-board-rescue:+3.3V #PWR033
 U 1 1 55F07936
 P 2150 3200
 F 0 "#PWR033" H 2150 3050 50  0001 C CNN
@@ -666,7 +660,7 @@ F 3 "" H 2150 3200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
+L top-board-rescue:R R9
 U 1 1 55F0813F
 P 2300 3550
 F 0 "R9" V 2350 3650 50  0000 L CNN
@@ -678,7 +672,7 @@ F 4 "RMCF0603JT100K" H -6400 -1400 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP6001 U3
+L local-components:MCP6001 U3
 U 1 1 55F0ECA7
 P 2750 1550
 F 0 "U3" H 2750 1700 50  0000 L CNN
@@ -690,7 +684,7 @@ F 4 "MCP6001T-I/OT" H 2750 1550 60  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L top-board-rescue:R R2
 U 1 1 55F0F70F
 P 1950 1200
 F 0 "R2" V 2030 1200 50  0000 C CNN
@@ -702,7 +696,7 @@ F 4 "RMCF0603JT10K0" H -1200 -100 50  0001 C CNN "MPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R3
+L top-board-rescue:R R3
 U 1 1 55F0FE88
 P 1950 1300
 F 0 "R3" V 2030 1300 50  0000 C CNN
@@ -714,7 +708,7 @@ F 4 "RMCF0603JT10K0" H -1200 0   50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3V #PWR034
+L top-board-rescue:+3.3V #PWR034
 U 1 1 55F1048B
 P 1650 1150
 F 0 "#PWR034" H 1650 1000 50  0001 C CNN
@@ -725,7 +719,7 @@ F 3 "" H 1650 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D D1
+L top-board-rescue:D D1
 U 1 1 55F10910
 P 1850 1800
 F 0 "D1" H 1850 2000 50  0000 C CNN
@@ -737,7 +731,7 @@ F 4 "1N4148WX-TP" H -1000 250 50  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L R R1
+L top-board-rescue:R R1
 U 1 1 55F10ABB
 P 1850 1650
 F 0 "R1" V 1800 1800 50  0000 C CNN
@@ -749,7 +743,7 @@ F 4 "RMCF0603JT160K" H -1300 350 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L C C5
+L top-board-rescue:C C5
 U 1 1 55F117E5
 P 2250 2000
 F 0 "C5" H 2275 2100 50  0000 L CNN
@@ -761,7 +755,7 @@ F 4 "GRM219R61E106KA12D" H -500 400 50  0001 C CNN "MPN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GNDD #PWR035
+L top-board-rescue:GNDD #PWR035
 U 1 1 55F12F83
 P 2650 1950
 F 0 "#PWR035" H 2650 1700 50  0001 C CNN
@@ -772,7 +766,7 @@ F 3 "" H 2650 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR036
+L top-board-rescue:GNDD #PWR036
 U 1 1 55F1337A
 P 1650 1350
 F 0 "#PWR036" H 1650 1100 50  0001 C CNN
@@ -783,7 +777,7 @@ F 3 "" H 1650 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR037
+L top-board-rescue:GNDD #PWR037
 U 1 1 55F133A2
 P 2250 2250
 F 0 "#PWR037" H 2250 2000 50  0001 C CNN
@@ -794,7 +788,7 @@ F 3 "" H 2250 2250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR038
+L top-board-rescue:+3.3V #PWR038
 U 1 1 55F14423
 P 2650 1150
 F 0 "#PWR038" H 2650 1000 50  0001 C CNN
@@ -807,7 +801,7 @@ $EndComp
 Text GLabel 1500 1650 0    50   Input ~ 0
 HMI_RESET
 $Comp
-L C C6
+L top-board-rescue:C C6
 U 1 1 55F21E4D
 P 3600 1900
 F 0 "C6" H 3625 2000 50  0000 L CNN
@@ -1218,7 +1212,7 @@ Wire Wire Line
 Connection ~ 2250 1300
 Connection ~ 3600 1550
 $Comp
-L GNDD #PWR039
+L top-board-rescue:GNDD #PWR039
 U 1 1 55F257D4
 P 3600 2150
 F 0 "#PWR039" H 3600 1900 50  0001 C CNN
@@ -1231,7 +1225,7 @@ $EndComp
 Wire Wire Line
 	3600 2050 3600 2150
 $Comp
-L +3.3V #PWR040
+L top-board-rescue:+3.3V #PWR040
 U 1 1 55F263E7
 P 3600 950
 F 0 "#PWR040" H 3600 800 50  0001 C CNN
@@ -1244,7 +1238,7 @@ $EndComp
 Wire Wire Line
 	3600 950  3600 1050
 $Comp
-L D D3
+L top-board-rescue:D D3
 U 1 1 55F2AF8C
 P 3350 1550
 F 0 "D3" H 3350 1750 50  0000 C CNN
@@ -1260,7 +1254,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 1550 4100 1550
 $Comp
-L GNDD #PWR041
+L top-board-rescue:GNDD #PWR041
 U 1 1 55F2C2DC
 P 3900 2300
 F 0 "#PWR041" H 3900 2050 50  0001 C CNN
@@ -1278,7 +1272,7 @@ Connection ~ 3900 1550
 Text GLabel 5400 2850 0    50   Input ~ 0
 JTAG_RESET
 $Comp
-L D D2
+L top-board-rescue:D D2
 U 1 1 55F31488
 P 2250 6550
 F 0 "D2" H 2250 6350 50  0000 C CNN
@@ -1299,7 +1293,7 @@ GLCD1_RESET
 Wire Wire Line
 	5500 3850 5650 3850
 $Comp
-L Q_NMOS_GSD Q1
+L top-board-rescue:Q_NMOS_GSD Q1
 U 1 1 55F4008F
 P 10050 5450
 F 0 "Q1" H 10350 5500 50  0000 R CNN
@@ -1316,7 +1310,7 @@ Wire Wire Line
 	8850 5150 9950 5150
 Connection ~ 9950 5150
 $Comp
-L GNDD #PWR042
+L top-board-rescue:GNDD #PWR042
 U 1 1 55F415F1
 P 9950 5800
 F 0 "#PWR042" H 9950 5550 50  0001 C CNN
@@ -1331,7 +1325,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 6350 2600 6350
 $Comp
-L GNDD #PWR043
+L top-board-rescue:GNDD #PWR043
 U 1 1 55F44C3F
 P 2700 5750
 F 0 "#PWR043" H 2700 5500 50  0001 C CNN
@@ -1351,7 +1345,7 @@ Wire Wire Line
 	2400 6050 2400 6350
 Connection ~ 2400 6350
 $Comp
-L R R11
+L top-board-rescue:R R11
 U 1 1 55F47A93
 P 3600 1200
 F 0 "R11" V 3680 1200 50  0000 C CNN
@@ -1363,7 +1357,7 @@ F 4 "RMCF0603JT10K0" H 450 -100 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_PACK4 RP1
+L top-board-rescue:R_PACK4 RP1
 U 1 1 55F2C432
 P 2100 7350
 F 0 "RP1" H 2100 7800 50  0000 C CNN

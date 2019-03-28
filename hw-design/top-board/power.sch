@@ -1,12 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:conn
-LIBS:regul
-LIBS:74xgxx
-LIBS:local-components
+EESchema Schematic File Version 4
 LIBS:top-board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -21,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X02 P1
+L top-board-rescue:CONN_01X02 P1
 U 1 1 5551B74C
 P 2050 1900
 F 0 "P1" H 2050 2050 50  0000 C CNN
@@ -33,7 +27,7 @@ F 4 "S2B-XH-A(LF)(SN)" H 100 0   50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L GNDD #PWR01
+L top-board-rescue:GNDD #PWR01
 U 1 1 5551B8FC
 P 2400 2050
 F 0 "#PWR01" H 2400 1800 50  0001 C CNN
@@ -44,7 +38,7 @@ F 3 "" H 2400 2050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L NCP1117ST33T3G U2
+L top-board-rescue:NCP1117ST33T3G U2
 U 1 1 5551B92C
 P 4450 1900
 F 0 "U2" H 4450 2150 40  0000 C CNN
@@ -56,7 +50,7 @@ F 4 "NCP1117DT33G" H 800 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L top-board-rescue:C C1
 U 1 1 5551BAF5
 P 2700 2100
 F 0 "C1" H 2725 2200 50  0000 L CNN
@@ -68,7 +62,7 @@ F 4 "C1608X7R1E104K080AA" H -350 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR02
+L top-board-rescue:GNDD #PWR02
 U 1 1 5551BC4E
 P 2700 2350
 F 0 "#PWR02" H 2700 2100 50  0001 C CNN
@@ -79,7 +73,7 @@ F 3 "" H 2700 2350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C4
+L top-board-rescue:CP C4
 U 1 1 5551C1E0
 P 5450 2100
 F 0 "C4" H 5475 2200 50  0000 L CNN
@@ -91,7 +85,7 @@ F 4 "UWX1C101MCL1GB" H 800 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L top-board-rescue:C C3
 U 1 1 5551C1E6
 P 5100 2100
 F 0 "C3" H 5125 2200 50  0000 L CNN
@@ -103,7 +97,7 @@ F 4 "C1608X7R1E104K080AA" H 750 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR03
+L top-board-rescue:GNDD #PWR03
 U 1 1 5551C1EC
 P 5100 2350
 F 0 "#PWR03" H 5100 2100 50  0001 C CNN
@@ -114,7 +108,7 @@ F 3 "" H 5100 2350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR04
+L top-board-rescue:GNDD #PWR04
 U 1 1 5551C1F2
 P 5450 2350
 F 0 "#PWR04" H 5450 2100 50  0001 C CNN
@@ -125,7 +119,7 @@ F 3 "" H 5450 2350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR05
+L top-board-rescue:+3.3V #PWR05
 U 1 1 5551C4DE
 P 5450 1700
 F 0 "#PWR05" H 5450 1550 50  0001 C CNN
@@ -136,7 +130,7 @@ F 3 "" H 5450 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR06
+L top-board-rescue:GNDD #PWR06
 U 1 1 5551C60E
 P 4450 2350
 F 0 "#PWR06" H 4450 2100 50  0001 C CNN
@@ -147,7 +141,7 @@ F 3 "" H 4450 2350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR07
+L top-board-rescue:GNDD #PWR07
 U 1 1 555B3D51
 P 6250 1900
 F 0 "#PWR07" H 6250 1650 50  0001 C CNN
@@ -158,7 +152,7 @@ F 3 "" H 6250 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG08
+L top-board-rescue:PWR_FLAG #FLG08
 U 1 1 555B3F29
 P 6250 1750
 F 0 "#FLG08" H 6250 1845 50  0001 C CNN
@@ -169,7 +163,7 @@ F 3 "" H 6250 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG09
+L top-board-rescue:PWR_FLAG #FLG09
 U 1 1 555B5109
 P 6700 1850
 F 0 "#FLG09" H 6700 1945 50  0001 C CNN
@@ -190,11 +184,11 @@ Wire Wire Line
 Wire Wire Line
 	5450 2350 5450 2250
 Wire Wire Line
-	2700 1700 2700 1950
+	2700 1700 2700 1850
 Wire Wire Line
-	4850 1850 5450 1850
+	4850 1850 5100 1850
 Wire Wire Line
-	5450 1700 5450 1950
+	5450 1700 5450 1850
 Wire Wire Line
 	5100 1950 5100 1850
 Wire Wire Line
@@ -203,7 +197,7 @@ Connection ~ 2700 1850
 Connection ~ 5450 1850
 Connection ~ 5100 1850
 $Comp
-L NCP1117ST50T3G U1
+L top-board-rescue:NCP1117ST50T3G U1
 U 1 1 55F003AA
 P 3350 1900
 F 0 "U1" H 3350 2150 40  0000 C CNN
@@ -215,9 +209,9 @@ F 4 "NCP1117DT50G" H -300 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 1850 2950 1850
+	2250 1850 2700 1850
 $Comp
-L C C2
+L top-board-rescue:C C2
 U 1 1 55F00CBC
 P 3900 2100
 F 0 "C2" H 3925 2200 50  0000 L CNN
@@ -229,7 +223,7 @@ F 4 "C1608X7R1E104K080AA" H 850 0   50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR010
+L top-board-rescue:GNDD #PWR010
 U 1 1 55F00CC2
 P 3900 2350
 F 0 "#PWR010" H 3900 2100 50  0001 C CNN
@@ -242,12 +236,12 @@ $EndComp
 Wire Wire Line
 	3900 2350 3900 2250
 Wire Wire Line
-	3750 1850 4050 1850
+	3750 1850 3900 1850
 Wire Wire Line
 	3900 1950 3900 1850
 Connection ~ 3900 1850
 $Comp
-L GNDD #PWR011
+L top-board-rescue:GNDD #PWR011
 U 1 1 55F00D26
 P 3350 2350
 F 0 "#PWR011" H 3350 2100 50  0001 C CNN
@@ -262,9 +256,11 @@ Wire Wire Line
 Wire Wire Line
 	6250 1750 6250 1900
 $Comp
-L +12V #PWR012
+L top-board-rescue:+12V #PWR012
 U 1 1 560995A4
 P 2700 1700
+AR Path="/560995A4" Ref="#PWR012"  Part="1" 
+AR Path="/5550DDF1/560995A4" Ref="#PWR012"  Part="1" 
 F 0 "#PWR012" H 2700 1550 50  0001 C CNN
 F 1 "+12V" H 2700 1840 50  0000 C CNN
 F 2 "" H 2700 1700 60  0000 C CNN
@@ -273,9 +269,11 @@ F 3 "" H 2700 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR013
+L top-board-rescue:+12V #PWR013
 U 1 1 560997DF
 P 6700 1750
+AR Path="/560997DF" Ref="#PWR013"  Part="1" 
+AR Path="/5550DDF1/560997DF" Ref="#PWR013"  Part="1" 
 F 0 "#PWR013" H 6700 1600 50  0001 C CNN
 F 1 "+12V" H 6700 1890 50  0000 C CNN
 F 2 "" H 6700 1750 60  0000 C CNN
@@ -285,4 +283,14 @@ F 3 "" H 6700 1750 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	6700 1750 6700 1850
+Wire Wire Line
+	2700 1850 2700 1950
+Wire Wire Line
+	2700 1850 2950 1850
+Wire Wire Line
+	5450 1850 5450 1950
+Wire Wire Line
+	5100 1850 5450 1850
+Wire Wire Line
+	3900 1850 4050 1850
 $EndSCHEMATC

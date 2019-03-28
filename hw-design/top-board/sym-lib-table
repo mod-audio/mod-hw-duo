@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name top-board-rescue)(type Legacy)(uri ${KIPRJMOD}/top-board-rescue.lib)(options "")(descr ""))
+  (lib (name local-components)(type Legacy)(uri "/home/jan/Production MOD 2019/MOD DUO REV 2019/mod-hw-duo/hw-design/lib/symbols/local-components.lib")(options "")(descr ""))
+)
