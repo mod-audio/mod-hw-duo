@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "/home/jan/MOD/Production MOD 2019/MOD DUO REV 2019/mod-hw-duo/hw-design/bottom-board/bottom-board.sch")
-    (date "Thu 28 Mar 2019 03:44:07 PM CET")
+    (source "/home/jan/MOD/GITHUB REPO's/mod-hw-duo/hw-design/bottom-board/bottom-board.sch")
+    (date "Sun 14 Apr 2019 01:49:04 PM CEST")
     (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1436,7 +1436,7 @@
       (tstamp 55737540))
     (comp (ref K1)
       (value IM06TS)
-      (footprint footprints:Relay_DPDT_IMXXTS)
+      (footprint footprints:Relay_DPDT_Omron_G6S-2F-good_pinout)
       (fields
         (field (name MPN) IM06TS))
       (libsource (lib bottom-board-rescue) (part IM06) (description ""))
@@ -1476,7 +1476,7 @@
       (tstamp 55FDBAB0))
     (comp (ref K2)
       (value IM06TS)
-      (footprint footprints:Relay_DPDT_IMXXTS)
+      (footprint footprints:Relay_DPDT_Omron_G6S-2F-good_pinout)
       (fields
         (field (name MPN) IM06TS))
       (libsource (lib bottom-board-rescue) (part IM06) (description ""))
@@ -2763,7 +2763,7 @@
         (pin (num 5) (name shield) (type passive)))))
   (libraries
     (library (logical bottom-board-rescue)
-      (uri "/home/jan/MOD/Production MOD 2019/MOD DUO REV 2019/mod-hw-duo/hw-design/bottom-board/bottom-board-rescue.lib")))
+      (uri "/home/jan/MOD/GITHUB REPO's/mod-hw-duo/hw-design/bottom-board/bottom-board-rescue.lib")))
   (nets
     (net (code 1) (name "Net-(D1-Pad2)")
       (node (ref F1) (pin 2))
