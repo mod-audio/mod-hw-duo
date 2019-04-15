@@ -146,10 +146,10 @@ L bottom-board-rescue:RT9701-Power_Management U10
 U 1 1 55080DFB
 P 7850 3550
 F 0 "U10" H 8050 3800 50  0000 C CNN
-F 1 "RT9701" H 8050 3400 50  0000 C CNN
+F 1 "RT9742MNGJ5" H 8050 3400 50  0000 C CNN
 F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5" H 7850 3550 60  0001 C CNN
-F 3 "" H 7850 3550 60  0000 C CNN
-F 4 "RT9701GB" H 250 0   50  0001 C CNN "MPN"
+F 3 "https://www.richtek.com/assets/product_file/RT9742/DS9742-07.pdf" H 6950 4600 60  0001 C CNN
+F 4 "RT9742MNGJ5" H 250 0   50  0001 C CNN "MPN"
 	1    7850 3550
 	1    0    0    -1  
 $EndComp
@@ -291,8 +291,6 @@ Text GLabel 9500 4100 2    50   BiDi ~ 0
 USB_HOST_DP
 Text GLabel 9500 4250 2    50   BiDi ~ 0
 USB_HOST_DM
-Text GLabel 7050 3550 0    50   Input ~ 0
-USB_HOST_DRV
 Text Notes 1050 2350 0    100  ~ 0
 USB DEVICE
 Text Notes 6400 2350 0    100  ~ 0
@@ -500,4 +498,6 @@ Wire Wire Line
 	4450 3400 4750 3400
 Wire Wire Line
 	3150 3200 3150 3400
+Text GLabel 7050 3550 0    50   Input ~ 0
+USB_HOST_DRV
 $EndSCHEMATC
