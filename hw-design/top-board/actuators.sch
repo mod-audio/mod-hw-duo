@@ -107,7 +107,7 @@ F 3 "" H 2450 3250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local-components:PEC11R E1
+L top-board-rescue:PEC11R-local-components E1
 U 1 1 555621D2
 P 5100 2850
 F 0 "E1" H 5275 3100 50  0000 C CNN
@@ -280,7 +280,7 @@ F 3 "" H 6150 4550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local-components:PEC11R E2
+L top-board-rescue:PEC11R-local-components E2
 U 1 1 55566FA7
 P 7300 2850
 F 0 "E2" H 7475 3100 50  0000 C CNN

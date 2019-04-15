@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L local-components:ERC12864-2 GLCD1
+L top-board-rescue:ERC12864-2-local-components GLCD1
 U 1 1 55569CD0
 P 5200 1700
 F 0 "GLCD1" H 4200 2250 50  0000 C CNN
@@ -213,7 +213,7 @@ F 3 "" H 4150 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L local-components:ERC12864-2 GLCD2
+L top-board-rescue:ERC12864-2-local-components GLCD2
 U 1 1 5554DE46
 P 5200 4300
 F 0 "GLCD2" H 4200 4850 50  0000 C CNN

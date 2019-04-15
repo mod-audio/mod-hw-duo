@@ -336,7 +336,7 @@ F 4 "LTRBGFSF-ABCB-QKYO-Z" H 8900 3150 60  0001 C CNN "MPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L local-components:PCA9685 U5
+L top-board-rescue:PCA9685-local-components U5
 U 1 1 5554A9BC
 P 6750 3750
 F 0 "U5" H 6450 4700 50  0000 C CNN
