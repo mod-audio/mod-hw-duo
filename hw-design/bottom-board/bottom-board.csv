@@ -1,49 +1,49 @@
-Title,MOD Duo - Bottom Board
-Revision,
-Date,
-Generated,Fri 16 Aug 2019 12:47:17 PM CEST
-Company,MOD
-Comment 1,
-Comment 2,
-Comment 3,
-Comment 4,
+Title,HMI testing board
+Revision,1.0
+Date,2019-08-16
+Generated,Fri 16 Aug 2019 02:10:32 PM CEST
+Company,MOD Devices GmbH
+Comment 1,MOD Duo controller
+Comment 2,MOD DuoX controller
+Comment 3,https://github.com/moddevices/mod-hw-duo/tree/HMI_testing_board
+Comment 4,Compatible w/ Marsboard SoM
 Total Parts,57
 Total Unique Parts,28
 
 
 
-Ref,Qty,Value,Footprint,Datasheet,MPN,
-C1 C4 C5 C31 C55 C59 ,6,100nF,Capacitors_SMD:C_0603,,C1608X7R1E104K080AA
-C2 C6 ,2,2200uF,Capacitors_ThroughHole:C_Radial_D10_L20_P5,,16PX2200MEFC10X20
-C3 C7 C30 C58 ,4,10uF,Capacitors_SMD:C_0805,,GRM219R61E106KA12D
-C8 C10 ,2,100nF,Capacitor_SMD:C_0805_2012Metric,, 
-C9 ,1,10u,Capacitor_SMD:C_0805_2012Metric,, 
-D1 D2 ,2,MBR230,Diode_SMD:D_SOD-123F,~, 
-D3 ,1,PRTR5V0U2X,Package_TO_SOT_SMD:SOT-143_Handsoldering,, 
-D4 D5 D6 ,3,LED_RGB,LED_SMD:LED_Avago_PLCC6_3x2.8mm,~, 
-F1 ,1,FUSE,Fuse_Holders_and_Fuses:Fuse_SMD2920,,0ZCF0200FF2C
-FB1 ,1,1mH,Inductors:SELF-WE-PD-XXL,,SRR1260-102K
-H1 H2 H5 ,3,HOLE,footprints:Hole_3.5mm,, 
-J7 J8 ,2,Conn_02x50_Odd_Even,footprints-local:Pin_Header_Straight_2x50_Pitch1.27mm_SMD,~, 
-JMP1 ,1,0R,footprints:Jumper_SMD_THT,,~
-L1 ,1,600R 1.5A,Capacitor_SMD:C_0805_2012Metric,, 
-P1 ,1,USB_B-RESCUE-bottom-board,Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal,, 
-P5 ,1,BARREL_JACK,Connect:BARREL_JACK,,PJ-002AH
-P6 ,1,HMI_POWER,footprints:B2B-XH-A,,B2B-XH-A(LF)(SN)
-P8 ,1,HMI_DATA,footprints:Pin_Header_Straight_2x10_Shrouded,,SBH11-PBPC-D10-ST-BK
-P9 ,1,SERIAL_DEBUG,Pin_Headers:Pin_Header_Straight_1x03,, 
-R1 ,1,5k6,Resistor_SMD:R_0603_1608Metric,, 
-R2 R12 R13 ,3,10K,Resistor_SMD:R_0603_1608Metric,, 
-R3 R4 R5 R6 R7 R8 R9 R10 R11 ,9,100,Resistor_SMD:R_0603_1608Metric,, 
-R14 ,1,10k,Resistors_SMD:R_0603,,RMCF0603JT10K0
-R15 R16 ,2,2k7,Resistors_SMD:R_0603,,RMCF0603JT2K70
-R72 R73 ,2,100R,Resistors_SMD:R_0603,,RMCF0603JT100R
-SW1 ,1,SW_PUSH,Buttons_Switches_ThroughHole:SW_Tactile_SPST_Angled,,1825027-2
-SW2 SW3 ,2,SW_PUSH,Button_Switch_SMD:SW_SPST_TL3305A,, 
-U1 ,1,MURATA 5V,footprints:OKI-78SR_Vertical,,OKI-78SR-5/1.5-W36-C
+Ref,Qty,Value,Footprint,Datasheet,MPN,MPN ,
+C1 C4 C5 C31 C55 C59 ,6,100nF,Capacitor_SMD:C_0603_1608Metric,,C1608X7R1E104K080AA, 
+C2 C6 ,2,2200uF,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,,16PX2200MEFC10X20, 
+C3 C7 C30 C58 ,4,10uF,Capacitor_SMD:C_0805_2012Metric,,GRM219R61E106KA12D, 
+C8 C10 ,2,100nF,Capacitor_SMD:C_0805_2012Metric,,C1608X7R1E104K080AA, 
+C9 ,1,10u,Capacitor_SMD:C_0805_2012Metric,,GRM219R61E106KA12D, 
+D1 D2 ,2,MBR230,Diode_SMD:D_SOD-123F,,MBR230LSFT1G, 
+D3 ,1,PRTR5V0U2X,Package_TO_SOT_SMD:SOT-143_Handsoldering,,PRTR5V0U2X 215, 
+D4 D5 D6 ,3,LED_RGB,LED_SMD:LED_Avago_PLCC6_3x2.8mm,~,LTRBGFSF-ABCB-QKYO-0-0-R18-Z, 
+F1 ,1,FUSE,Fuse_Holders_and_Fuses:Fuse_SMD2920,,0ZCF0200FF2C, 
+H1 H2 H5 ,3,HOLE,footprints:Hole_3.5mm,,~, 
+L1 ,1,600R 1.5A,Capacitor_SMD:C_0805_2012Metric,,742792651, 
+L2 ,1,1mH,Inductors:SELF-WE-PD-XXL,,SRR1260-102K, 
+P1 ,1,USB_B-RESCUE-bottom-board,Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal,,61729-1011BLF, 
+P2 P3 ,2,Conn_02x50_Odd_Even,footprints-local:Pin_Header_Straight_2x50_Pitch1.27mm_SMD,~, , 
+P5 ,1,BARREL_JACK,Connect:BARREL_JACK,,PJ-002AH, 
+P6 ,1,HMI_POWER,footprints:B2B-XH-A,,B2B-XH-A(LF)(SN), 
+P8 ,1,HMI_DATA,footprints:Pin_Header_Straight_2x10_Shrouded,,SBH11-PBPC-D10-ST-BK, 
+P9 ,1,SERIAL_DEBUG,Pin_Headers:Pin_Header_Straight_1x03,, ,~
+R0 ,1,0R,footprints:Jumper_SMD_THT,,~, 
+R1 ,1,5k6,Resistor_SMD:R_0603_1608Metric,,CRGCQ0603F5K6, 
+R2 R12 R13 ,3,10K,Resistor_SMD:R_0603_1608Metric,,RMCF0603JT10K0, 
+R3 R4 R5 R6 R7 R8 R9 R10 R11 ,9,100,Resistor_SMD:R_0603_1608Metric,,CRG0603J100R, 
+R14 ,1,10k,Resistor_SMD:R_0603_1608Metric,,RMCF0603JT10K0, 
+R15 R16 ,2,2k7,Resistors_SMD:R_0603,,RMCF0603JT2K70, 
+R72 R73 ,2,100R,Resistor_SMD:R_0603_1608Metric,,RMCF0603JT100R, 
+SW1 ,1,SW_PUSH,Buttons_Switches_ThroughHole:SW_Tactile_SPST_Angled,,1825027-2, 
+SW2 SW3 ,2,SW_PUSH,Button_Switch_SMD:SW_SPST_TL3305A,,TL3305AF160QG, 
+U1 ,1,MURATA 5V,footprints:OKI-78SR_Vertical,,OKI-78SR-5/1.5-W36-C, 
 
 
 
 
 BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
-Generated Fri 16 Aug 2019 12:47:17 PM CEST
+Generated Fri 16 Aug 2019 02:10:32 PM CEST

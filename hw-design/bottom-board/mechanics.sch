@@ -24,6 +24,7 @@ F 0 "H2" H 1150 670 50  0000 C CNN
 F 1 "HOLE" H 1150 1020 50  0000 C CNN
 F 2 "footprints:Hole_3.5mm" H 1150 850 60  0001 C CNN
 F 3 "" H 1150 850 60  0000 C CNN
+F 4 "~" H 1150 850 50  0001 C CNN "MPN"
 	1    1150 850 
 	1    0    0    -1  
 $EndComp
@@ -37,6 +38,7 @@ F 0 "H5" H 2200 670 50  0000 C CNN
 F 1 "HOLE" H 2200 1020 50  0000 C CNN
 F 2 "footprints:Hole_3.5mm" H 2200 850 60  0001 C CNN
 F 3 "" H 2200 850 60  0000 C CNN
+F 4 "~" H 2200 850 50  0001 C CNN "MPN"
 	1    2200 850 
 	1    0    0    -1  
 $EndComp
@@ -50,6 +52,7 @@ F 0 "H1" H 1650 670 50  0000 C CNN
 F 1 "HOLE" H 1650 1020 50  0000 C CNN
 F 2 "footprints:Hole_3.5mm" H 1650 850 60  0001 C CNN
 F 3 "" H 1650 850 60  0000 C CNN
+F 4 "~" H 1650 850 50  0001 C CNN "MPN"
 	1    1650 850 
 	1    0    0    -1  
 $EndComp

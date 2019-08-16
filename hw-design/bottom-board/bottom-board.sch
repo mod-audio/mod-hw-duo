@@ -5,13 +5,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
-Title "MOD Duo -HMI testing board"
-Date ""
+Title "HMI testing board"
+Date "2019-08-16"
 Rev "1.0"
 Comp "MOD Devices GmbH"
-Comment1 "Controller board Tester"
-Comment2 "used for the MOD Duo"
-Comment3 "or MOD Duo X controller"
+Comment1 "MOD Duo controller"
+Comment2 "MOD DuoX controller"
+Comment3 "https://github.com/moddevices/mod-hw-duo/tree/HMI_testing_board"
 Comment4 "Compatible w/ Marsboard SoM"
 $EndDescr
 $Sheet

@@ -2,18 +2,18 @@
 <export version="D">
   <design>
     <source>/home/jan/MOD/mod duo repo testing china/mod-hw-duo/hw-design/bottom-board/bottom-board.sch</source>
-    <date>Fri 16 Aug 2019 01:21:12 PM CEST</date>
+    <date>Fri 16 Aug 2019 02:10:32 PM CEST</date>
     <tool>Eeschema 5.1.2-f72e74a~84~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>MOD Duo -HMI testing board</title>
+        <title>HMI testing board</title>
         <company>MOD Devices GmbH</company>
         <rev>1.0</rev>
-        <date/>
+        <date>2019-08-16</date>
         <source>bottom-board.sch</source>
-        <comment number="1" value="Controller board Tester"/>
-        <comment number="2" value="used for the MOD Duo"/>
-        <comment number="3" value="or MOD Duo X controller"/>
+        <comment number="1" value="MOD Duo controller"/>
+        <comment number="2" value="MOD DuoX controller"/>
+        <comment number="3" value="https://github.com/moddevices/mod-hw-duo/tree/HMI_testing_board"/>
         <comment number="4" value="Compatible w/ Marsboard SoM"/>
       </title_block>
     </sheet>
@@ -48,7 +48,7 @@
         <title>MOD Duo -HMI testing board</title>
         <company>MOD Devices GmbH</company>
         <rev>1.0</rev>
-        <date/>
+        <date>2019-08-16</date>
         <source>connectors.sch</source>
         <comment number="1" value="Controller board Tester"/>
         <comment number="2" value="used for the MOD Duo"/>
@@ -107,7 +107,7 @@
       <sheetpath names="/power/" tstamps="/54F7244B/"/>
       <tstamp>54F878FE</tstamp>
     </comp>
-    <comp ref="FB1">
+    <comp ref="L2">
       <value>1mH</value>
       <footprint>Inductors:SELF-WE-PD-XXL</footprint>
       <fields>
@@ -137,7 +137,7 @@
       <sheetpath names="/power/" tstamps="/54F7244B/"/>
       <tstamp>551387C7</tstamp>
     </comp>
-    <comp ref="JMP1">
+    <comp ref="R0">
       <value>0R</value>
       <footprint>footprints:Jumper_SMD_THT</footprint>
       <fields>
@@ -159,7 +159,7 @@
     </comp>
     <comp ref="C7">
       <value>10uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="MPN">GRM219R61E106KA12D</field>
       </fields>
@@ -169,7 +169,7 @@
     </comp>
     <comp ref="C3">
       <value>10uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="MPN">GRM219R61E106KA12D</field>
       </fields>
@@ -229,7 +229,7 @@
     </comp>
     <comp ref="C31">
       <value>100nF</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">C1608X7R1E104K080AA</field>
       </fields>
@@ -249,7 +249,7 @@
     </comp>
     <comp ref="R14">
       <value>10k</value>
-      <footprint>Resistors_SMD:R_0603</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RMCF0603JT10K0</field>
       </fields>
@@ -259,7 +259,7 @@
     </comp>
     <comp ref="C30">
       <value>10uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="MPN">GRM219R61E106KA12D</field>
       </fields>
@@ -289,7 +289,7 @@
     </comp>
     <comp ref="C59">
       <value>100nF</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">C1608X7R1E104K080AA</field>
       </fields>
@@ -299,7 +299,7 @@
     </comp>
     <comp ref="C58">
       <value>10uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="MPN">GRM219R61E106KA12D</field>
       </fields>
@@ -307,7 +307,7 @@
       <sheetpath names="/coreboard/" tstamps="/54F725AE/"/>
       <tstamp>56657420</tstamp>
     </comp>
-    <comp ref="J7">
+    <comp ref="P2">
       <value>Conn_02x50_Odd_Even</value>
       <footprint>footprints-local:Pin_Header_Straight_2x50_Pitch1.27mm_SMD</footprint>
       <datasheet>~</datasheet>
@@ -315,7 +315,7 @@
       <sheetpath names="/coreboard/" tstamps="/54F725AE/"/>
       <tstamp>5C60E9FC</tstamp>
     </comp>
-    <comp ref="J8">
+    <comp ref="P3">
       <value>Conn_02x50_Odd_Even</value>
       <footprint>footprints-local:Pin_Header_Straight_2x50_Pitch1.27mm_SMD</footprint>
       <datasheet>~</datasheet>
@@ -356,13 +356,16 @@
     <comp ref="P9">
       <value>SERIAL_DEBUG</value>
       <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <fields>
+        <field name="MPN ">~</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="CONN_01X03" description=""/>
       <sheetpath names="/connectors/" tstamps="/54F72FB8/"/>
       <tstamp>550C52C0</tstamp>
     </comp>
     <comp ref="C55">
       <value>100nF</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">C1608X7R1E104K080AA</field>
       </fields>
@@ -372,7 +375,7 @@
     </comp>
     <comp ref="R72">
       <value>100R</value>
-      <footprint>Resistors_SMD:R_0603</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RMCF0603JT100R</field>
       </fields>
@@ -382,7 +385,7 @@
     </comp>
     <comp ref="R73">
       <value>100R</value>
-      <footprint>Resistors_SMD:R_0603</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
         <field name="MPN">RMCF0603JT100R</field>
       </fields>
@@ -393,6 +396,9 @@
     <comp ref="H2">
       <value>HOLE</value>
       <footprint>footprints:Hole_3.5mm</footprint>
+      <fields>
+        <field name="MPN">~</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="HOLE-local-components" description=""/>
       <sheetpath names="/mechanics/" tstamps="/55FC02AF/"/>
       <tstamp>55FC2212</tstamp>
@@ -400,6 +406,9 @@
     <comp ref="H5">
       <value>HOLE</value>
       <footprint>footprints:Hole_3.5mm</footprint>
+      <fields>
+        <field name="MPN">~</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="HOLE-local-components" description=""/>
       <sheetpath names="/mechanics/" tstamps="/55FC02AF/"/>
       <tstamp>55FC22B0</tstamp>
@@ -407,6 +416,9 @@
     <comp ref="H1">
       <value>HOLE</value>
       <footprint>footprints:Hole_3.5mm</footprint>
+      <fields>
+        <field name="MPN">~</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="HOLE-local-components" description=""/>
       <sheetpath names="/mechanics/" tstamps="/55FC02AF/"/>
       <tstamp>5D06CB0A</tstamp>
@@ -414,6 +426,9 @@
     <comp ref="P1">
       <value>USB_B-RESCUE-bottom-board</value>
       <footprint>Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal</footprint>
+      <fields>
+        <field name="MPN">61729-1011BLF</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="USB_B-RESCUE-bottom-board" description=""/>
       <sheetpath names="/USB device/" tstamps="/5CFC887F/"/>
       <tstamp>5CFC8943</tstamp>
@@ -421,6 +436,9 @@
     <comp ref="R1">
       <value>5k6</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRGCQ0603F5K6</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/USB device/" tstamps="/5CFC887F/"/>
       <tstamp>5CFCA1E0</tstamp>
@@ -428,6 +446,9 @@
     <comp ref="R2">
       <value>10K</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RMCF0603JT10K0</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/USB device/" tstamps="/5CFC887F/"/>
       <tstamp>5CFCA6AE</tstamp>
@@ -435,6 +456,9 @@
     <comp ref="C8">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">C1608X7R1E104K080AA</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="C_Small" description=""/>
       <sheetpath names="/USB device/" tstamps="/5CFC887F/"/>
       <tstamp>5CFCA8FB</tstamp>
@@ -442,6 +466,9 @@
     <comp ref="C9">
       <value>10u</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">GRM219R61E106KA12D</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="C_Small" description=""/>
       <sheetpath names="/USB device/" tstamps="/5CFC887F/"/>
       <tstamp>5CFCAD3B</tstamp>
@@ -449,6 +476,9 @@
     <comp ref="D3">
       <value>PRTR5V0U2X</value>
       <footprint>Package_TO_SOT_SMD:SOT-143_Handsoldering</footprint>
+      <fields>
+        <field name="MPN">PRTR5V0U2X,215</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="PRTR5V0U2X" description=""/>
       <sheetpath names="/USB device/" tstamps="/5CFC887F/"/>
       <tstamp>5CFCB33C</tstamp>
@@ -456,6 +486,9 @@
     <comp ref="C10">
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">C1608X7R1E104K080AA</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="C_Small" description=""/>
       <sheetpath names="/USB device/" tstamps="/5CFC887F/"/>
       <tstamp>5CFCB82F</tstamp>
@@ -463,6 +496,9 @@
     <comp ref="L1">
       <value>600R 1.5A</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="MPN">742792651</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="L_Small" description=""/>
       <sheetpath names="/USB device/" tstamps="/5CFC887F/"/>
       <tstamp>5CFCC77F</tstamp>
@@ -471,6 +507,9 @@
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_Avago_PLCC6_3x2.8mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTRBGFSF-ABCB-QKYO-0-0-R18-Z</field>
+      </fields>
       <libsource lib="Device" part="LED_RGB" description="RGB LED, 6 pin package"/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF7BCC5</tstamp>
@@ -478,6 +517,9 @@
     <comp ref="R4">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF7CB2B</tstamp>
@@ -485,6 +527,9 @@
     <comp ref="R5">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF7D477</tstamp>
@@ -493,6 +538,9 @@
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_Avago_PLCC6_3x2.8mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTRBGFSF-ABCB-QKYO-0-0-R18-Z</field>
+      </fields>
       <libsource lib="Device" part="LED_RGB" description="RGB LED, 6 pin package"/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF8364E</tstamp>
@@ -500,6 +548,9 @@
     <comp ref="R6">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF83654</tstamp>
@@ -507,6 +558,9 @@
     <comp ref="R7">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF8365A</tstamp>
@@ -514,6 +568,9 @@
     <comp ref="R8">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF83660</tstamp>
@@ -522,6 +579,9 @@
       <value>LED_RGB</value>
       <footprint>LED_SMD:LED_Avago_PLCC6_3x2.8mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">LTRBGFSF-ABCB-QKYO-0-0-R18-Z</field>
+      </fields>
       <libsource lib="Device" part="LED_RGB" description="RGB LED, 6 pin package"/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF87B4F</tstamp>
@@ -529,6 +589,9 @@
     <comp ref="R9">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF87B55</tstamp>
@@ -536,6 +599,9 @@
     <comp ref="R10">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF87B5B</tstamp>
@@ -543,6 +609,9 @@
     <comp ref="R11">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF87B61</tstamp>
@@ -550,6 +619,9 @@
     <comp ref="R3">
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">CRG0603J100R</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF7ECF7</tstamp>
@@ -557,6 +629,9 @@
     <comp ref="R12">
       <value>10K</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RMCF0603JT10K0</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF8BFAC</tstamp>
@@ -564,6 +639,9 @@
     <comp ref="SW2">
       <value>SW_PUSH</value>
       <footprint>Button_Switch_SMD:SW_SPST_TL3305A</footprint>
+      <fields>
+        <field name="MPN">TL3305AF160QG</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="SW_PUSH" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF8DE79</tstamp>
@@ -571,6 +649,9 @@
     <comp ref="R13">
       <value>10K</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN">RMCF0603JT10K0</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="R" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF939E5</tstamp>
@@ -578,6 +659,9 @@
     <comp ref="SW3">
       <value>SW_PUSH</value>
       <footprint>Button_Switch_SMD:SW_SPST_TL3305A</footprint>
+      <fields>
+        <field name="MPN">TL3305AF160QG</field>
+      </fields>
       <libsource lib="bottom-board-rescue" part="SW_PUSH" description=""/>
       <sheetpath names="/Testing Interface/" tstamps="/5CFD694C/"/>
       <tstamp>5CF939F1</tstamp>
@@ -981,7 +1065,7 @@
   <nets>
     <net code="1" name="+12VA">
       <node ref="C6" pin="1"/>
-      <node ref="FB1" pin="2"/>
+      <node ref="L2" pin="2"/>
       <node ref="C4" pin="1"/>
     </net>
     <net code="2" name="Net-(D1-Pad2)">
@@ -1006,39 +1090,39 @@
       <node ref="D3" pin="1"/>
       <node ref="C9" pin="2"/>
       <node ref="C8" pin="2"/>
-      <node ref="J7" pin="16"/>
-      <node ref="J7" pin="3"/>
-      <node ref="J7" pin="35"/>
-      <node ref="J7" pin="36"/>
-      <node ref="J7" pin="28"/>
-      <node ref="J7" pin="41"/>
-      <node ref="J7" pin="15"/>
-      <node ref="J7" pin="21"/>
-      <node ref="J7" pin="22"/>
-      <node ref="J7" pin="27"/>
+      <node ref="P2" pin="16"/>
+      <node ref="P2" pin="3"/>
+      <node ref="P2" pin="35"/>
+      <node ref="P2" pin="36"/>
+      <node ref="P2" pin="28"/>
+      <node ref="P2" pin="41"/>
+      <node ref="P2" pin="15"/>
+      <node ref="P2" pin="21"/>
+      <node ref="P2" pin="22"/>
+      <node ref="P2" pin="27"/>
       <node ref="C31" pin="2"/>
-      <node ref="J7" pin="1"/>
+      <node ref="P2" pin="1"/>
       <node ref="SW1" pin="1"/>
-      <node ref="J7" pin="10"/>
+      <node ref="P2" pin="10"/>
       <node ref="C59" pin="2"/>
       <node ref="C58" pin="2"/>
-      <node ref="J7" pin="62"/>
-      <node ref="J7" pin="61"/>
-      <node ref="J7" pin="72"/>
-      <node ref="J7" pin="47"/>
-      <node ref="J8" pin="2"/>
-      <node ref="J8" pin="10"/>
-      <node ref="J8" pin="18"/>
-      <node ref="J7" pin="9"/>
-      <node ref="J8" pin="71"/>
+      <node ref="P2" pin="62"/>
+      <node ref="P2" pin="61"/>
+      <node ref="P2" pin="72"/>
+      <node ref="P2" pin="47"/>
+      <node ref="P3" pin="2"/>
+      <node ref="P3" pin="10"/>
+      <node ref="P3" pin="18"/>
+      <node ref="P2" pin="9"/>
+      <node ref="P3" pin="71"/>
       <node ref="C30" pin="2"/>
-      <node ref="J8" pin="4"/>
-      <node ref="J8" pin="54"/>
+      <node ref="P3" pin="4"/>
+      <node ref="P3" pin="54"/>
       <node ref="C3" pin="2"/>
       <node ref="D6" pin="1"/>
       <node ref="C7" pin="2"/>
-      <node ref="JMP1" pin="1"/>
-      <node ref="JMP1" pin="2"/>
+      <node ref="R0" pin="1"/>
+      <node ref="R0" pin="2"/>
       <node ref="U1" pin="2"/>
       <node ref="C4" pin="2"/>
       <node ref="C1" pin="2"/>
@@ -1068,8 +1152,8 @@
       <node ref="U1" pin="1"/>
     </net>
     <net code="6" name="+3V3">
-      <node ref="J7" pin="4"/>
-      <node ref="J7" pin="2"/>
+      <node ref="P2" pin="4"/>
+      <node ref="P2" pin="2"/>
       <node ref="C58" pin="1"/>
       <node ref="C59" pin="1"/>
       <node ref="R16" pin="1"/>
@@ -1079,7 +1163,7 @@
     <net code="7" name="Net-(C1-Pad1)">
       <node ref="C1" pin="1"/>
       <node ref="D1" pin="1"/>
-      <node ref="FB1" pin="1"/>
+      <node ref="L2" pin="1"/>
       <node ref="C2" pin="1"/>
     </net>
     <net code="8" name="+5V">
@@ -1087,572 +1171,572 @@
       <node ref="R12" pin="2"/>
       <node ref="C31" pin="1"/>
       <node ref="C30" pin="1"/>
-      <node ref="J8" pin="1"/>
-      <node ref="J8" pin="3"/>
+      <node ref="P3" pin="1"/>
+      <node ref="P3" pin="3"/>
       <node ref="U1" pin="3"/>
       <node ref="C7" pin="1"/>
       <node ref="C5" pin="1"/>
     </net>
     <net code="9" name="TWI4_SDA">
       <node ref="P8" pin="19"/>
-      <node ref="J8" pin="34"/>
+      <node ref="P3" pin="34"/>
       <node ref="R16" pin="2"/>
     </net>
-    <net code="10" name="Net-(J7-Pad25)">
-      <node ref="J7" pin="25"/>
+    <net code="10" name="Net-(P2-Pad25)">
+      <node ref="P2" pin="25"/>
     </net>
-    <net code="11" name="Net-(J7-Pad23)">
-      <node ref="J7" pin="23"/>
+    <net code="11" name="Net-(P2-Pad23)">
+      <node ref="P2" pin="23"/>
     </net>
-    <net code="12" name="Net-(J7-Pad19)">
-      <node ref="J7" pin="19"/>
+    <net code="12" name="Net-(P2-Pad19)">
+      <node ref="P2" pin="19"/>
     </net>
-    <net code="13" name="Net-(J7-Pad17)">
-      <node ref="J7" pin="17"/>
+    <net code="13" name="Net-(P2-Pad17)">
+      <node ref="P2" pin="17"/>
     </net>
-    <net code="14" name="Net-(J7-Pad13)">
-      <node ref="J7" pin="13"/>
+    <net code="14" name="Net-(P2-Pad13)">
+      <node ref="P2" pin="13"/>
     </net>
-    <net code="15" name="Net-(J7-Pad59)">
-      <node ref="J7" pin="59"/>
+    <net code="15" name="Net-(P2-Pad59)">
+      <node ref="P2" pin="59"/>
     </net>
-    <net code="16" name="Net-(J7-Pad77)">
-      <node ref="J7" pin="77"/>
+    <net code="16" name="Net-(P2-Pad77)">
+      <node ref="P2" pin="77"/>
     </net>
-    <net code="17" name="Net-(J7-Pad75)">
-      <node ref="J7" pin="75"/>
+    <net code="17" name="Net-(P2-Pad75)">
+      <node ref="P2" pin="75"/>
     </net>
-    <net code="18" name="Net-(J7-Pad73)">
-      <node ref="J7" pin="73"/>
+    <net code="18" name="Net-(P2-Pad73)">
+      <node ref="P2" pin="73"/>
     </net>
-    <net code="19" name="Net-(J7-Pad71)">
-      <node ref="J7" pin="71"/>
+    <net code="19" name="Net-(P2-Pad71)">
+      <node ref="P2" pin="71"/>
     </net>
-    <net code="20" name="Net-(J7-Pad69)">
-      <node ref="J7" pin="69"/>
+    <net code="20" name="Net-(P2-Pad69)">
+      <node ref="P2" pin="69"/>
     </net>
-    <net code="21" name="Net-(J7-Pad67)">
-      <node ref="J7" pin="67"/>
+    <net code="21" name="Net-(P2-Pad67)">
+      <node ref="P2" pin="67"/>
     </net>
-    <net code="22" name="Net-(J7-Pad65)">
-      <node ref="J7" pin="65"/>
+    <net code="22" name="Net-(P2-Pad65)">
+      <node ref="P2" pin="65"/>
     </net>
-    <net code="23" name="Net-(J7-Pad63)">
-      <node ref="J7" pin="63"/>
+    <net code="23" name="Net-(P2-Pad63)">
+      <node ref="P2" pin="63"/>
     </net>
-    <net code="24" name="Net-(J7-Pad57)">
-      <node ref="J7" pin="57"/>
+    <net code="24" name="Net-(P2-Pad57)">
+      <node ref="P2" pin="57"/>
     </net>
-    <net code="25" name="Net-(J7-Pad55)">
-      <node ref="J7" pin="55"/>
+    <net code="25" name="Net-(P2-Pad55)">
+      <node ref="P2" pin="55"/>
     </net>
-    <net code="26" name="Net-(J7-Pad53)">
-      <node ref="J7" pin="53"/>
+    <net code="26" name="Net-(P2-Pad53)">
+      <node ref="P2" pin="53"/>
     </net>
-    <net code="27" name="Net-(J7-Pad51)">
-      <node ref="J7" pin="51"/>
+    <net code="27" name="Net-(P2-Pad51)">
+      <node ref="P2" pin="51"/>
     </net>
-    <net code="28" name="Net-(J7-Pad49)">
-      <node ref="J7" pin="49"/>
+    <net code="28" name="Net-(P2-Pad49)">
+      <node ref="P2" pin="49"/>
     </net>
-    <net code="29" name="Net-(J7-Pad45)">
-      <node ref="J7" pin="45"/>
+    <net code="29" name="Net-(P2-Pad45)">
+      <node ref="P2" pin="45"/>
     </net>
-    <net code="30" name="Net-(J7-Pad43)">
-      <node ref="J7" pin="43"/>
+    <net code="30" name="Net-(P2-Pad43)">
+      <node ref="P2" pin="43"/>
     </net>
-    <net code="31" name="Net-(J8-Pad26)">
-      <node ref="J8" pin="26"/>
+    <net code="31" name="Net-(P3-Pad26)">
+      <node ref="P3" pin="26"/>
     </net>
-    <net code="32" name="Net-(J8-Pad6)">
-      <node ref="J8" pin="6"/>
+    <net code="32" name="Net-(P3-Pad6)">
+      <node ref="P3" pin="6"/>
     </net>
-    <net code="33" name="Net-(J8-Pad8)">
-      <node ref="J8" pin="8"/>
+    <net code="33" name="Net-(P3-Pad8)">
+      <node ref="P3" pin="8"/>
     </net>
-    <net code="34" name="Net-(J8-Pad12)">
-      <node ref="J8" pin="12"/>
+    <net code="34" name="Net-(P3-Pad12)">
+      <node ref="P3" pin="12"/>
     </net>
-    <net code="35" name="Net-(J8-Pad14)">
-      <node ref="J8" pin="14"/>
+    <net code="35" name="Net-(P3-Pad14)">
+      <node ref="P3" pin="14"/>
     </net>
-    <net code="36" name="Net-(J8-Pad20)">
-      <node ref="J8" pin="20"/>
+    <net code="36" name="Net-(P3-Pad20)">
+      <node ref="P3" pin="20"/>
     </net>
-    <net code="37" name="Net-(J8-Pad28)">
-      <node ref="J8" pin="28"/>
+    <net code="37" name="Net-(P3-Pad28)">
+      <node ref="P3" pin="28"/>
     </net>
-    <net code="38" name="Net-(J8-Pad30)">
-      <node ref="J8" pin="30"/>
+    <net code="38" name="Net-(P3-Pad30)">
+      <node ref="P3" pin="30"/>
     </net>
-    <net code="39" name="Net-(J8-Pad89)">
-      <node ref="J8" pin="89"/>
+    <net code="39" name="Net-(P3-Pad89)">
+      <node ref="P3" pin="89"/>
     </net>
-    <net code="40" name="Net-(J7-Pad7)">
-      <node ref="J7" pin="7"/>
+    <net code="40" name="Net-(P2-Pad7)">
+      <node ref="P2" pin="7"/>
     </net>
-    <net code="41" name="Net-(J7-Pad5)">
-      <node ref="J7" pin="5"/>
+    <net code="41" name="Net-(P2-Pad5)">
+      <node ref="P2" pin="5"/>
     </net>
-    <net code="42" name="Net-(J7-Pad11)">
-      <node ref="J7" pin="11"/>
+    <net code="42" name="Net-(P2-Pad11)">
+      <node ref="P2" pin="11"/>
     </net>
-    <net code="43" name="Net-(J7-Pad12)">
-      <node ref="J7" pin="12"/>
+    <net code="43" name="Net-(P2-Pad12)">
+      <node ref="P2" pin="12"/>
     </net>
-    <net code="44" name="Net-(J7-Pad14)">
-      <node ref="J7" pin="14"/>
+    <net code="44" name="Net-(P2-Pad14)">
+      <node ref="P2" pin="14"/>
     </net>
-    <net code="45" name="Net-(J7-Pad18)">
-      <node ref="J7" pin="18"/>
+    <net code="45" name="Net-(P2-Pad18)">
+      <node ref="P2" pin="18"/>
     </net>
-    <net code="46" name="Net-(J7-Pad20)">
-      <node ref="J7" pin="20"/>
+    <net code="46" name="Net-(P2-Pad20)">
+      <node ref="P2" pin="20"/>
     </net>
-    <net code="47" name="Net-(J7-Pad24)">
-      <node ref="J7" pin="24"/>
+    <net code="47" name="Net-(P2-Pad24)">
+      <node ref="P2" pin="24"/>
     </net>
-    <net code="48" name="Net-(J7-Pad26)">
-      <node ref="J7" pin="26"/>
+    <net code="48" name="Net-(P2-Pad26)">
+      <node ref="P2" pin="26"/>
     </net>
-    <net code="49" name="Net-(J7-Pad30)">
-      <node ref="J7" pin="30"/>
+    <net code="49" name="Net-(P2-Pad30)">
+      <node ref="P2" pin="30"/>
     </net>
-    <net code="50" name="Net-(J7-Pad32)">
-      <node ref="J7" pin="32"/>
+    <net code="50" name="Net-(P2-Pad32)">
+      <node ref="P2" pin="32"/>
     </net>
-    <net code="51" name="Net-(J7-Pad34)">
-      <node ref="J7" pin="34"/>
+    <net code="51" name="Net-(P2-Pad34)">
+      <node ref="P2" pin="34"/>
     </net>
-    <net code="52" name="Net-(J7-Pad8)">
-      <node ref="J7" pin="8"/>
+    <net code="52" name="Net-(P2-Pad8)">
+      <node ref="P2" pin="8"/>
     </net>
     <net code="53" name="HMI_RESET">
       <node ref="P8" pin="16"/>
-      <node ref="J8" pin="96"/>
+      <node ref="P3" pin="96"/>
     </net>
-    <net code="54" name="Net-(J8-Pad9)">
-      <node ref="J8" pin="9"/>
+    <net code="54" name="Net-(P3-Pad9)">
+      <node ref="P3" pin="9"/>
     </net>
-    <net code="55" name="Net-(J8-Pad90)">
-      <node ref="J8" pin="90"/>
+    <net code="55" name="Net-(P3-Pad90)">
+      <node ref="P3" pin="90"/>
     </net>
-    <net code="56" name="Net-(J8-Pad91)">
-      <node ref="J8" pin="91"/>
+    <net code="56" name="Net-(P3-Pad91)">
+      <node ref="P3" pin="91"/>
     </net>
-    <net code="57" name="Net-(J8-Pad92)">
-      <node ref="J8" pin="92"/>
+    <net code="57" name="Net-(P3-Pad92)">
+      <node ref="P3" pin="92"/>
     </net>
-    <net code="58" name="Net-(J8-Pad93)">
-      <node ref="J8" pin="93"/>
+    <net code="58" name="Net-(P3-Pad93)">
+      <node ref="P3" pin="93"/>
     </net>
     <net code="59" name="HMI_ISP_ENABLE">
       <node ref="P8" pin="14"/>
-      <node ref="J8" pin="94"/>
+      <node ref="P3" pin="94"/>
     </net>
-    <net code="60" name="Net-(J8-Pad95)">
-      <node ref="J8" pin="95"/>
+    <net code="60" name="Net-(P3-Pad95)">
+      <node ref="P3" pin="95"/>
     </net>
-    <net code="61" name="Net-(J8-Pad97)">
-      <node ref="J8" pin="97"/>
+    <net code="61" name="Net-(P3-Pad97)">
+      <node ref="P3" pin="97"/>
     </net>
-    <net code="62" name="Net-(J8-Pad98)">
-      <node ref="J8" pin="98"/>
+    <net code="62" name="Net-(P3-Pad98)">
+      <node ref="P3" pin="98"/>
     </net>
-    <net code="63" name="Net-(J8-Pad99)">
-      <node ref="J8" pin="99"/>
+    <net code="63" name="Net-(P3-Pad99)">
+      <node ref="P3" pin="99"/>
     </net>
     <net code="64" name="POWER_BUTTON">
       <node ref="P8" pin="13"/>
-      <node ref="J8" pin="16"/>
+      <node ref="P3" pin="16"/>
     </net>
-    <net code="65" name="Net-(J7-Pad6)">
-      <node ref="J7" pin="6"/>
+    <net code="65" name="Net-(P2-Pad6)">
+      <node ref="P2" pin="6"/>
     </net>
-    <net code="66" name="Net-(J7-Pad97)">
-      <node ref="J7" pin="97"/>
+    <net code="66" name="Net-(P2-Pad97)">
+      <node ref="P2" pin="97"/>
     </net>
-    <net code="67" name="Net-(J7-Pad70)">
-      <node ref="J7" pin="70"/>
+    <net code="67" name="Net-(P2-Pad70)">
+      <node ref="P2" pin="70"/>
     </net>
-    <net code="68" name="Net-(J7-Pad74)">
-      <node ref="J7" pin="74"/>
+    <net code="68" name="Net-(P2-Pad74)">
+      <node ref="P2" pin="74"/>
     </net>
-    <net code="69" name="Net-(J7-Pad76)">
-      <node ref="J7" pin="76"/>
+    <net code="69" name="Net-(P2-Pad76)">
+      <node ref="P2" pin="76"/>
     </net>
-    <net code="70" name="Net-(J7-Pad78)">
-      <node ref="J7" pin="78"/>
+    <net code="70" name="Net-(P2-Pad78)">
+      <node ref="P2" pin="78"/>
     </net>
-    <net code="71" name="Net-(J7-Pad80)">
-      <node ref="J7" pin="80"/>
+    <net code="71" name="Net-(P2-Pad80)">
+      <node ref="P2" pin="80"/>
     </net>
-    <net code="72" name="Net-(J7-Pad82)">
-      <node ref="J7" pin="82"/>
+    <net code="72" name="Net-(P2-Pad82)">
+      <node ref="P2" pin="82"/>
     </net>
-    <net code="73" name="Net-(J7-Pad84)">
-      <node ref="J7" pin="84"/>
+    <net code="73" name="Net-(P2-Pad84)">
+      <node ref="P2" pin="84"/>
     </net>
     <net code="74" name="UBOOT_BUTTON">
       <node ref="R14" pin="2"/>
-      <node ref="J7" pin="99"/>
+      <node ref="P2" pin="99"/>
       <node ref="SW1" pin="2"/>
     </net>
-    <net code="75" name="Net-(J7-Pad68)">
-      <node ref="J7" pin="68"/>
+    <net code="75" name="Net-(P2-Pad68)">
+      <node ref="P2" pin="68"/>
     </net>
-    <net code="76" name="Net-(J7-Pad95)">
-      <node ref="J7" pin="95"/>
+    <net code="76" name="Net-(P2-Pad95)">
+      <node ref="P2" pin="95"/>
     </net>
-    <net code="77" name="Net-(J7-Pad93)">
-      <node ref="J7" pin="93"/>
+    <net code="77" name="Net-(P2-Pad93)">
+      <node ref="P2" pin="93"/>
     </net>
-    <net code="78" name="Net-(J7-Pad91)">
-      <node ref="J7" pin="91"/>
+    <net code="78" name="Net-(P2-Pad91)">
+      <node ref="P2" pin="91"/>
     </net>
-    <net code="79" name="Net-(J7-Pad89)">
-      <node ref="J7" pin="89"/>
+    <net code="79" name="Net-(P2-Pad89)">
+      <node ref="P2" pin="89"/>
     </net>
-    <net code="80" name="Net-(J7-Pad87)">
-      <node ref="J7" pin="87"/>
+    <net code="80" name="Net-(P2-Pad87)">
+      <node ref="P2" pin="87"/>
     </net>
-    <net code="81" name="Net-(J7-Pad85)">
-      <node ref="J7" pin="85"/>
+    <net code="81" name="Net-(P2-Pad85)">
+      <node ref="P2" pin="85"/>
     </net>
-    <net code="82" name="Net-(J7-Pad83)">
-      <node ref="J7" pin="83"/>
+    <net code="82" name="Net-(P2-Pad83)">
+      <node ref="P2" pin="83"/>
     </net>
-    <net code="83" name="Net-(J7-Pad81)">
-      <node ref="J7" pin="81"/>
+    <net code="83" name="Net-(P2-Pad81)">
+      <node ref="P2" pin="81"/>
     </net>
-    <net code="84" name="Net-(J7-Pad48)">
-      <node ref="J7" pin="48"/>
+    <net code="84" name="Net-(P2-Pad48)">
+      <node ref="P2" pin="48"/>
     </net>
-    <net code="85" name="Net-(J7-Pad42)">
-      <node ref="J7" pin="42"/>
+    <net code="85" name="Net-(P2-Pad42)">
+      <node ref="P2" pin="42"/>
     </net>
-    <net code="86" name="Net-(J7-Pad44)">
-      <node ref="J7" pin="44"/>
+    <net code="86" name="Net-(P2-Pad44)">
+      <node ref="P2" pin="44"/>
     </net>
-    <net code="87" name="Net-(J7-Pad46)">
-      <node ref="J7" pin="46"/>
+    <net code="87" name="Net-(P2-Pad46)">
+      <node ref="P2" pin="46"/>
     </net>
-    <net code="88" name="Net-(J7-Pad79)">
-      <node ref="J7" pin="79"/>
+    <net code="88" name="Net-(P2-Pad79)">
+      <node ref="P2" pin="79"/>
     </net>
-    <net code="89" name="Net-(J7-Pad50)">
-      <node ref="J7" pin="50"/>
+    <net code="89" name="Net-(P2-Pad50)">
+      <node ref="P2" pin="50"/>
     </net>
-    <net code="90" name="Net-(J7-Pad52)">
-      <node ref="J7" pin="52"/>
+    <net code="90" name="Net-(P2-Pad52)">
+      <node ref="P2" pin="52"/>
     </net>
-    <net code="91" name="Net-(J7-Pad54)">
-      <node ref="J7" pin="54"/>
+    <net code="91" name="Net-(P2-Pad54)">
+      <node ref="P2" pin="54"/>
     </net>
-    <net code="92" name="Net-(J7-Pad56)">
-      <node ref="J7" pin="56"/>
+    <net code="92" name="Net-(P2-Pad56)">
+      <node ref="P2" pin="56"/>
     </net>
-    <net code="93" name="Net-(J7-Pad58)">
-      <node ref="J7" pin="58"/>
+    <net code="93" name="Net-(P2-Pad58)">
+      <node ref="P2" pin="58"/>
     </net>
-    <net code="94" name="Net-(J7-Pad60)">
-      <node ref="J7" pin="60"/>
+    <net code="94" name="Net-(P2-Pad60)">
+      <node ref="P2" pin="60"/>
     </net>
-    <net code="95" name="Net-(J7-Pad64)">
-      <node ref="J7" pin="64"/>
+    <net code="95" name="Net-(P2-Pad64)">
+      <node ref="P2" pin="64"/>
     </net>
-    <net code="96" name="Net-(J7-Pad66)">
-      <node ref="J7" pin="66"/>
+    <net code="96" name="Net-(P2-Pad66)">
+      <node ref="P2" pin="66"/>
     </net>
     <net code="97" name="HMI_SPI0_MOSI">
       <node ref="P8" pin="6"/>
-      <node ref="J8" pin="43"/>
+      <node ref="P3" pin="43"/>
     </net>
-    <net code="98" name="Net-(J8-Pad11)">
-      <node ref="J8" pin="11"/>
+    <net code="98" name="Net-(P3-Pad11)">
+      <node ref="P3" pin="11"/>
     </net>
-    <net code="99" name="Net-(J8-Pad13)">
-      <node ref="J8" pin="13"/>
+    <net code="99" name="Net-(P3-Pad13)">
+      <node ref="P3" pin="13"/>
     </net>
-    <net code="100" name="Net-(J8-Pad15)">
-      <node ref="J8" pin="15"/>
+    <net code="100" name="Net-(P3-Pad15)">
+      <node ref="P3" pin="15"/>
     </net>
-    <net code="101" name="Net-(J8-Pad17)">
-      <node ref="J8" pin="17"/>
+    <net code="101" name="Net-(P3-Pad17)">
+      <node ref="P3" pin="17"/>
     </net>
-    <net code="102" name="Net-(J8-Pad19)">
-      <node ref="J8" pin="19"/>
+    <net code="102" name="Net-(P3-Pad19)">
+      <node ref="P3" pin="19"/>
     </net>
-    <net code="103" name="Net-(J8-Pad25)">
-      <node ref="J8" pin="25"/>
+    <net code="103" name="Net-(P3-Pad25)">
+      <node ref="P3" pin="25"/>
     </net>
-    <net code="104" name="Net-(J8-Pad27)">
-      <node ref="J8" pin="27"/>
+    <net code="104" name="Net-(P3-Pad27)">
+      <node ref="P3" pin="27"/>
     </net>
-    <net code="105" name="Net-(J8-Pad29)">
-      <node ref="J8" pin="29"/>
+    <net code="105" name="Net-(P3-Pad29)">
+      <node ref="P3" pin="29"/>
     </net>
     <net code="106" name="HMI_SPI0_CS0">
-      <node ref="J8" pin="41"/>
+      <node ref="P3" pin="41"/>
       <node ref="P8" pin="10"/>
     </net>
     <net code="107" name="CHAIN_UART_TX">
-      <node ref="J8" pin="49"/>
+      <node ref="P3" pin="49"/>
     </net>
     <net code="108" name="HMI_RFU_02(TX)">
-      <node ref="J8" pin="51"/>
+      <node ref="P3" pin="51"/>
       <node ref="P8" pin="3"/>
     </net>
     <net code="109" name="CHAIN_UART_DE">
-      <node ref="J8" pin="55"/>
+      <node ref="P3" pin="55"/>
     </net>
     <net code="110" name="CODEC_I2S_MCLK">
-      <node ref="J8" pin="57"/>
+      <node ref="P3" pin="57"/>
     </net>
     <net code="111" name="CODEC_I2S_LRCK">
-      <node ref="J8" pin="59"/>
+      <node ref="P3" pin="59"/>
     </net>
-    <net code="112" name="Net-(J8-Pad37)">
-      <node ref="J8" pin="37"/>
+    <net code="112" name="Net-(P3-Pad37)">
+      <node ref="P3" pin="37"/>
     </net>
-    <net code="113" name="Net-(J8-Pad35)">
-      <node ref="J8" pin="35"/>
+    <net code="113" name="Net-(P3-Pad35)">
+      <node ref="P3" pin="35"/>
     </net>
     <net code="114" name="CODEC_I2C_SCL">
-      <node ref="J8" pin="31"/>
+      <node ref="P3" pin="31"/>
     </net>
     <net code="115" name="TWI4_SCL">
-      <node ref="J8" pin="33"/>
+      <node ref="P3" pin="33"/>
       <node ref="R15" pin="1"/>
       <node ref="P8" pin="17"/>
     </net>
     <net code="116" name="RIGHT_GAIN_CTRL2">
-      <node ref="J8" pin="23"/>
+      <node ref="P3" pin="23"/>
     </net>
     <net code="117" name="LEFT_GAIN_CTRL2">
-      <node ref="J8" pin="21"/>
+      <node ref="P3" pin="21"/>
     </net>
-    <net code="118" name="Net-(J8-Pad5)">
-      <node ref="J8" pin="5"/>
+    <net code="118" name="Net-(P3-Pad5)">
+      <node ref="P3" pin="5"/>
     </net>
-    <net code="119" name="Net-(J8-Pad7)">
-      <node ref="J8" pin="7"/>
+    <net code="119" name="Net-(P3-Pad7)">
+      <node ref="P3" pin="7"/>
     </net>
     <net code="120" name="Button2">
-      <node ref="J7" pin="94"/>
+      <node ref="P2" pin="94"/>
       <node ref="SW3" pin="2"/>
       <node ref="R13" pin="1"/>
     </net>
     <net code="121" name="LED2_G">
       <node ref="R7" pin="1"/>
-      <node ref="J7" pin="98"/>
+      <node ref="P2" pin="98"/>
     </net>
     <net code="122" name="LED2_R">
       <node ref="R8" pin="1"/>
-      <node ref="J7" pin="100"/>
+      <node ref="P2" pin="100"/>
     </net>
     <net code="123" name="LED3_B">
-      <node ref="J7" pin="33"/>
+      <node ref="P2" pin="33"/>
       <node ref="R9" pin="1"/>
     </net>
     <net code="124" name="LED3_G">
-      <node ref="J7" pin="31"/>
+      <node ref="P2" pin="31"/>
       <node ref="R10" pin="1"/>
     </net>
     <net code="125" name="LED3_R">
       <node ref="R11" pin="1"/>
-      <node ref="J7" pin="29"/>
+      <node ref="P2" pin="29"/>
     </net>
     <net code="126" name="Button1">
       <node ref="R12" pin="1"/>
       <node ref="SW2" pin="2"/>
-      <node ref="J7" pin="92"/>
+      <node ref="P2" pin="92"/>
     </net>
     <net code="127" name="LED2_B">
-      <node ref="J7" pin="96"/>
+      <node ref="P2" pin="96"/>
       <node ref="R6" pin="1"/>
     </net>
     <net code="128" name="LED1_B">
       <node ref="R3" pin="1"/>
-      <node ref="J7" pin="86"/>
+      <node ref="P2" pin="86"/>
     </net>
     <net code="129" name="LED1_G">
-      <node ref="J7" pin="88"/>
+      <node ref="P2" pin="88"/>
       <node ref="R4" pin="1"/>
     </net>
     <net code="130" name="LED1_R">
-      <node ref="J7" pin="90"/>
+      <node ref="P2" pin="90"/>
       <node ref="R5" pin="1"/>
     </net>
-    <net code="131" name="Net-(J8-Pad74)">
-      <node ref="J8" pin="74"/>
+    <net code="131" name="Net-(P3-Pad74)">
+      <node ref="P3" pin="74"/>
     </net>
-    <net code="132" name="Net-(J8-Pad39)">
-      <node ref="J8" pin="39"/>
+    <net code="132" name="Net-(P3-Pad39)">
+      <node ref="P3" pin="39"/>
     </net>
     <net code="133" name="USB_DEV_DM">
       <node ref="P1" pin="2"/>
       <node ref="D3" pin="3"/>
-      <node ref="J7" pin="40"/>
+      <node ref="P2" pin="40"/>
     </net>
     <net code="134" name="USB_DEV_DP">
       <node ref="D3" pin="2"/>
       <node ref="P1" pin="3"/>
-      <node ref="J7" pin="38"/>
+      <node ref="P2" pin="38"/>
     </net>
     <net code="135" name="USB_HOST_DM">
-      <node ref="J7" pin="39"/>
+      <node ref="P2" pin="39"/>
     </net>
     <net code="136" name="USB_HOST_DP">
-      <node ref="J7" pin="37"/>
+      <node ref="P2" pin="37"/>
     </net>
     <net code="137" name="CODEC_I2S_BCLK">
-      <node ref="J8" pin="58"/>
+      <node ref="P3" pin="58"/>
     </net>
-    <net code="138" name="Net-(J8-Pad36)">
-      <node ref="J8" pin="36"/>
+    <net code="138" name="Net-(P3-Pad36)">
+      <node ref="P3" pin="36"/>
     </net>
     <net code="139" name="USB_HOST_DRV">
-      <node ref="J8" pin="46"/>
+      <node ref="P3" pin="46"/>
     </net>
     <net code="140" name="USB_DEV_DET">
       <node ref="C8" pin="1"/>
-      <node ref="J8" pin="48"/>
+      <node ref="P3" pin="48"/>
       <node ref="R1" pin="2"/>
       <node ref="R2" pin="1"/>
     </net>
     <net code="141" name="CHAIN_UART_RX">
-      <node ref="J8" pin="50"/>
+      <node ref="P3" pin="50"/>
     </net>
     <net code="142" name="HMI_RFU_01(RX)">
       <node ref="P8" pin="1"/>
-      <node ref="J8" pin="52"/>
+      <node ref="P3" pin="52"/>
     </net>
     <net code="143" name="CHAIN_UART_RE">
-      <node ref="J8" pin="56"/>
+      <node ref="P3" pin="56"/>
     </net>
-    <net code="144" name="Net-(J8-Pad38)">
-      <node ref="J8" pin="38"/>
+    <net code="144" name="Net-(P3-Pad38)">
+      <node ref="P3" pin="38"/>
     </net>
     <net code="145" name="CODEC_I2S_SDIN">
-      <node ref="J8" pin="60"/>
+      <node ref="P3" pin="60"/>
     </net>
     <net code="146" name="CODEC_I2S_SDOUT">
-      <node ref="J8" pin="64"/>
+      <node ref="P3" pin="64"/>
     </net>
     <net code="147" name="CLI_UART_TX">
       <node ref="P9" pin="1"/>
       <node ref="R72" pin="2"/>
-      <node ref="J8" pin="70"/>
+      <node ref="P3" pin="70"/>
     </net>
-    <net code="148" name="Net-(J8-Pad68)">
-      <node ref="J8" pin="68"/>
+    <net code="148" name="Net-(P3-Pad68)">
+      <node ref="P3" pin="68"/>
     </net>
-    <net code="149" name="Net-(J8-Pad66)">
-      <node ref="J8" pin="66"/>
+    <net code="149" name="Net-(P3-Pad66)">
+      <node ref="P3" pin="66"/>
     </net>
-    <net code="150" name="Net-(J8-Pad62)">
-      <node ref="J8" pin="62"/>
+    <net code="150" name="Net-(P3-Pad62)">
+      <node ref="P3" pin="62"/>
     </net>
     <net code="151" name="CLI_UART_RX">
       <node ref="P9" pin="2"/>
       <node ref="R73" pin="2"/>
-      <node ref="J8" pin="72"/>
+      <node ref="P3" pin="72"/>
     </net>
     <net code="152" name="RIGHT_TRUE_BYPASS">
-      <node ref="J8" pin="76"/>
+      <node ref="P3" pin="76"/>
     </net>
     <net code="153" name="RIGHT_GAIN_CTRL1">
-      <node ref="J8" pin="24"/>
+      <node ref="P3" pin="24"/>
     </net>
     <net code="154" name="LEFT_GAIN_CTRL1">
-      <node ref="J8" pin="22"/>
+      <node ref="P3" pin="22"/>
     </net>
     <net code="155" name="MIDI_UART_RX">
-      <node ref="J8" pin="78"/>
+      <node ref="P3" pin="78"/>
     </net>
     <net code="156" name="HMI_SPI0_MISO">
       <node ref="P8" pin="4"/>
-      <node ref="J8" pin="44"/>
+      <node ref="P3" pin="44"/>
     </net>
     <net code="157" name="HMI_SPI0_CLK">
       <node ref="P8" pin="8"/>
-      <node ref="J8" pin="42"/>
+      <node ref="P3" pin="42"/>
     </net>
-    <net code="158" name="Net-(J8-Pad40)">
-      <node ref="J8" pin="40"/>
+    <net code="158" name="Net-(P3-Pad40)">
+      <node ref="P3" pin="40"/>
     </net>
     <net code="159" name="HP_CLOCK">
-      <node ref="J8" pin="67"/>
+      <node ref="P3" pin="67"/>
     </net>
-    <net code="160" name="Net-(J8-Pad85)">
-      <node ref="J8" pin="85"/>
+    <net code="160" name="Net-(P3-Pad85)">
+      <node ref="P3" pin="85"/>
     </net>
-    <net code="161" name="Net-(J8-Pad87)">
-      <node ref="J8" pin="87"/>
+    <net code="161" name="Net-(P3-Pad87)">
+      <node ref="P3" pin="87"/>
     </net>
     <net code="162" name="HMI_UART_TX">
       <node ref="P8" pin="18"/>
-      <node ref="J8" pin="79"/>
+      <node ref="P3" pin="79"/>
     </net>
     <net code="163" name="MIDI_UART_TX">
-      <node ref="J8" pin="77"/>
+      <node ref="P3" pin="77"/>
     </net>
     <net code="164" name="LEFT_TRUE_BYPASS">
-      <node ref="J8" pin="75"/>
+      <node ref="P3" pin="75"/>
     </net>
-    <net code="165" name="Net-(J8-Pad73)">
-      <node ref="J8" pin="73"/>
+    <net code="165" name="Net-(P3-Pad73)">
+      <node ref="P3" pin="73"/>
     </net>
-    <net code="166" name="Net-(J8-Pad83)">
-      <node ref="J8" pin="83"/>
+    <net code="166" name="Net-(P3-Pad83)">
+      <node ref="P3" pin="83"/>
     </net>
     <net code="167" name="HP_UP/DN">
-      <node ref="J8" pin="65"/>
+      <node ref="P3" pin="65"/>
     </net>
-    <net code="168" name="Net-(J8-Pad69)">
-      <node ref="J8" pin="69"/>
+    <net code="168" name="Net-(P3-Pad69)">
+      <node ref="P3" pin="69"/>
     </net>
-    <net code="169" name="Net-(J8-Pad63)">
-      <node ref="J8" pin="63"/>
+    <net code="169" name="Net-(P3-Pad63)">
+      <node ref="P3" pin="63"/>
     </net>
-    <net code="170" name="Net-(J8-Pad61)">
-      <node ref="J8" pin="61"/>
+    <net code="170" name="Net-(P3-Pad61)">
+      <node ref="P3" pin="61"/>
     </net>
-    <net code="172" name="Net-(J8-Pad53)">
-      <node ref="J8" pin="53"/>
+    <net code="172" name="Net-(P3-Pad53)">
+      <node ref="P3" pin="53"/>
     </net>
-    <net code="173" name="Net-(J8-Pad47)">
-      <node ref="J8" pin="47"/>
+    <net code="173" name="Net-(P3-Pad47)">
+      <node ref="P3" pin="47"/>
     </net>
-    <net code="174" name="Net-(J8-Pad45)">
-      <node ref="J8" pin="45"/>
+    <net code="174" name="Net-(P3-Pad45)">
+      <node ref="P3" pin="45"/>
     </net>
-    <net code="175" name="Net-(J8-Pad82)">
-      <node ref="J8" pin="82"/>
+    <net code="175" name="Net-(P3-Pad82)">
+      <node ref="P3" pin="82"/>
     </net>
     <net code="176" name="HMI_UART_RX">
-      <node ref="J8" pin="80"/>
+      <node ref="P3" pin="80"/>
       <node ref="P8" pin="20"/>
     </net>
     <net code="177" name="CODEC_~RESET">
-      <node ref="J8" pin="84"/>
+      <node ref="P3" pin="84"/>
     </net>
     <net code="178" name="PM_LEDS_OE">
       <node ref="P8" pin="15"/>
-      <node ref="J8" pin="86"/>
+      <node ref="P3" pin="86"/>
     </net>
-    <net code="179" name="Net-(J8-Pad100)">
-      <node ref="J8" pin="100"/>
+    <net code="179" name="Net-(P3-Pad100)">
+      <node ref="P3" pin="100"/>
     </net>
-    <net code="180" name="Net-(J8-Pad88)">
-      <node ref="J8" pin="88"/>
+    <net code="180" name="Net-(P3-Pad88)">
+      <node ref="P3" pin="88"/>
     </net>
     <net code="181" name="CODEC_I2C_SDA">
-      <node ref="J8" pin="32"/>
+      <node ref="P3" pin="32"/>
     </net>
-    <net code="182" name="Net-(J8-Pad81)">
-      <node ref="J8" pin="81"/>
+    <net code="182" name="Net-(P3-Pad81)">
+      <node ref="P3" pin="81"/>
     </net>
     <net code="184" name="Net-(P8-Pad9)">
       <node ref="R73" pin="1"/>
