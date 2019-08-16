@@ -1,0 +1,51 @@
+### Module positions - created on Mon 10 Jun 2019 01:27:11 PM CEST ###
+### Printed by Pcbnew version kicad 5.1.2-f72e74a~84~ubuntu18.04.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                  Package                                        PosX       PosY       Rot  Side
+C1        100nF                C_0603                                     132.1273   -43.9081  270.0000  top
+C3        10uF                 C_0805                                     125.9815   -56.0375  180.0000  top
+C4        100nF                C_0603                                     147.3927   -43.8573  270.0000  top
+C5        100nF                C_0603                                     122.6337   -55.8038    0.0000  top
+C7        10uF                 C_0805                                     122.2223   -57.7393    0.0000  top
+C8        100nF                C_0805_2012Metric                           85.9825   -11.6124    0.0000  top
+C9        10u                  C_0805_2012Metric                           82.5175   -12.9624  180.0000  top
+C10       100nF                C_0805_2012Metric                           86.0325   -14.2424    0.0000  top
+C30       10uF                 C_0805                                     108.1761   -26.6243   90.0000  top
+C31       100nF                C_0603                                     106.2457   -26.9799   90.0000  top
+C55       100nF                C_0603                                     136.6495    -5.9741   90.0000  top
+C58       10uF                 C_0805                                     102.5119   -26.6243   90.0000  top
+C59       100nF                C_0603                                     104.4423   -26.9799   90.0000  top
+D1        MBR230               D_SOD-123F                                 134.4041   -20.5232   90.0000  top
+D2        MBR230               D_SOD-123F                                 129.0955   -20.4881   90.0000  top
+D3        PRTR5V0U2X           SOT-143_Handsoldering                       92.9200   -11.6224  180.0000  top
+D4        LED_RGB              LED_Avago_PLCC6_3x2.8mm                     15.6000   -56.8124    0.0000  top
+D5        LED_RGB              LED_Avago_PLCC6_3x2.8mm                     14.5500   -69.4724    0.0000  top
+D6        LED_RGB              LED_Avago_PLCC6_3x2.8mm                    130.8600   -66.8124  180.0000  top
+F1        FUSE                 Fuse_SMD2920                               130.6805   -13.2131  180.0000  top
+FB1       1mH                  SELF-WE-PD-XXL                             139.7473   -43.1461    0.0000  top
+G***      LOGO                 mod-logo                                    86.3600   -62.3824  180.0000  top
+J7        Conn_02x50_Odd_Even  Pin_Header_Straight_2x50_Pitch1.27mm_SMD    66.8150   -79.7524  270.0000  top
+J8        Conn_02x50_Odd_Even  Pin_Header_Straight_2x50_Pitch1.27mm_SMD    66.8020   -36.7734  270.0000  top
+L1        600R_1.5A            C_0805_2012Metric                           72.0425    -4.1824  180.0000  top
+R1        5k6                  R_0603_1608Metric                           83.4400   -10.4649  270.0000  top
+R2        10K                  R_0603_1608Metric                           85.8925    -9.6824    0.0000  top
+R3        100                  R_0603_1608Metric                           20.3300   -55.3724  180.0000  top
+R4        100                  R_0603_1608Metric                           20.3275   -56.8124  180.0000  top
+R5        100                  R_0603_1608Metric                           20.3800   -58.2624  180.0000  top
+R6        100                  R_0603_1608Metric                           19.0700   -68.1224  180.0000  top
+R7        100                  R_0603_1608Metric                           19.0475   -69.5824  180.0000  top
+R8        100                  R_0603_1608Metric                           19.1000   -71.0324  180.0000  top
+R9        100                  R_0603_1608Metric                          125.6800   -68.3624    0.0000  top
+R10       100                  R_0603_1608Metric                          125.6575   -66.8524    0.0000  top
+R11       100                  R_0603_1608Metric                          125.5800   -65.3424    0.0000  top
+R12       10K                  R_0603_1608Metric                           -9.5000   -58.9649  270.0000  top
+R13       10K                  R_0603_1608Metric                           -9.3300   -66.7249   90.0000  top
+R14       10k                  R_0603                                     100.9371   -43.1343    0.0000  top
+R15       2k7                  R_0603                                      78.2041   -43.8709   90.0000  top
+R16       2k7                  R_0603                                      76.3245   -43.8709  270.0000  top
+R72       100R                 R_0603                                       9.5479   -27.6403   90.0000  top
+R73       100R                 R_0603                                       7.0079   -27.6403   90.0000  top
+SW2       SW_PUSH              SW_SPST_TL3305A                             -0.3000   -56.8524    0.0000  top
+SW3       SW_PUSH              SW_SPST_TL3305A                              0.1900   -69.2824    0.0000  top
+## End

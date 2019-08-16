@@ -1,18 +1,18 @@
 EESchema Schematic File Version 4
 LIBS:bottom-board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 12
-Title "MOD Duo - Bottom Board"
+Sheet 3 7
+Title "MOD Duo -HMI testing board"
 Date ""
-Rev ""
-Comp "MOD"
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Rev "1.0"
+Comp "MOD Devices GmbH"
+Comment1 "Controller board Tester"
+Comment2 "used for the MOD Duo"
+Comment3 "or MOD Duo X controller"
+Comment4 "Compatible w/ Marsboard SoM"
 $EndDescr
 $Comp
 L bottom-board-rescue:GNDD-power #PWR043
@@ -238,34 +238,6 @@ F 3 "" H 2800 1100 60  0000 C CNN
 	1    2800 1100
 	-1   0    0    1   
 $EndComp
-Text GLabel 6100 6700 2    50   BiDi ~ 0
-TWI4_SDA
-Text GLabel 6100 6850 2    50   Input ~ 0
-TWI4_SCL
-$Comp
-L bottom-board-rescue:GNDD-power #PWR059
-U 1 1 55FAFACA
-P 5600 7300
-F 0 "#PWR059" H 5600 7050 50  0001 C CNN
-F 1 "GNDD" H 5600 7150 50  0000 C CNN
-F 2 "" H 5600 7300 60  0000 C CNN
-F 3 "" H 5600 7300 60  0000 C CNN
-	1    5600 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 7200 5600 7300
-$Comp
-L bottom-board-rescue:+3.3V-power #PWR060
-U 1 1 55FAFDCC
-P 5600 6250
-F 0 "#PWR060" H 5600 6100 50  0001 C CNN
-F 1 "+3.3V" H 5600 6390 50  0000 C CNN
-F 2 "" H 5600 6250 60  0000 C CNN
-F 3 "" H 5600 6250 60  0000 C CNN
-	1    5600 6250
-	1    0    0    -1  
-$EndComp
 $Comp
 L bottom-board-rescue:R_Small R16
 U 1 1 55FB0BD7
@@ -354,67 +326,6 @@ Wire Wire Line
 	2400 3950 2350 3950
 Wire Wire Line
 	1650 6450 1750 6450
-$Comp
-L bottom-board-rescue:C_Small C60
-U 1 1 567B7F33
-P 5850 6350
-F 0 "C60" V 5900 6400 50  0000 L CNN
-F 1 "100nF" V 5800 6400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 5850 6350 60  0001 C CNN
-F 3 "" H 5850 6350 60  0000 C CNN
-F 4 "C1608X7R1E104K080AA" H -5050 4250 50  0001 C CNN "MPN"
-	1    5850 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L bottom-board-rescue:GNDD-power #PWR063
-U 1 1 567B8370
-P 6050 6400
-F 0 "#PWR063" H 6050 6150 50  0001 C CNN
-F 1 "GNDD" H 6050 6250 50  0000 C CNN
-F 2 "" H 6050 6400 60  0000 C CNN
-F 3 "" H 6050 6400 60  0000 C CNN
-	1    6050 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 6350 6050 6350
-Wire Wire Line
-	6050 6350 6050 6400
-Connection ~ 5600 6350
-$Comp
-L bottom-board-rescue:AT24CS08-STUM U4
-U 1 1 568DDEB6
-P 5600 6800
-AR Path="/568DDEB6" Ref="U4"  Part="1" 
-AR Path="/54F725AE/568DDEB6" Ref="U4"  Part="1" 
-F 0 "U4" H 5400 7050 50  0000 C CNN
-F 1 "AT24CS08-STUM" H 5900 6500 40  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5600 6800 35  0001 C CIN
-F 3 "" H 5600 6800 60  0000 C CNN
-F 4 "AT24CS08-STUM" H 5600 6800 60  0001 C CNN "MPN"
-	1    5600 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 6700 6000 6700
-Wire Wire Line
-	6000 6850 6100 6850
-$Comp
-L bottom-board-rescue:GNDD-power #PWR064
-U 1 1 568DE570
-P 5100 7100
-F 0 "#PWR064" H 5100 6850 50  0001 C CNN
-F 1 "GNDD" H 5100 6950 50  0000 C CNN
-F 2 "" H 5100 7100 60  0000 C CNN
-F 3 "" H 5100 7100 60  0000 C CNN
-	1    5100 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 7000 5100 7000
-Wire Wire Line
-	5100 7000 5100 7100
 Wire Wire Line
 	1750 6450 1750 6550
 Wire Wire Line
@@ -429,8 +340,6 @@ Wire Wire Line
 	2800 1050 2800 1000
 Wire Wire Line
 	2900 750  2800 750 
-Wire Wire Line
-	5600 6350 5600 6250
 $Comp
 L bottom-board-rescue:Conn_02x50_Odd_Even-header J7
 U 1 1 5C60E9FC
@@ -455,8 +364,6 @@ F 3 "~" H 5200 4350 50  0001 C CNN
 $EndComp
 Text GLabel 3550 3500 1    50   Input ~ 0
 POWER_BUTTON
-Wire Wire Line
-	5600 6350 5750 6350
 Wire Wire Line
 	3000 1550 3000 1450
 Wire Wire Line
@@ -527,14 +434,6 @@ NoConn ~ 6800 1550
 NoConn ~ 6900 1550
 NoConn ~ 7000 1550
 NoConn ~ 7100 1550
-NoConn ~ 7200 1550
-NoConn ~ 7300 1550
-NoConn ~ 7400 1550
-NoConn ~ 7500 1550
-NoConn ~ 7600 1550
-NoConn ~ 7700 1550
-NoConn ~ 7800 1550
-NoConn ~ 7900 1550
 Wire Wire Line
 	7900 2150 7900 2050
 NoConn ~ 7800 2050
@@ -589,9 +488,6 @@ Wire Wire Line
 Connection ~ 5300 2100
 Wire Wire Line
 	5300 2100 5000 2100
-NoConn ~ 4600 2050
-NoConn ~ 4500 2050
-NoConn ~ 4400 2050
 NoConn ~ 4200 2050
 NoConn ~ 4100 2050
 NoConn ~ 3900 2050
@@ -796,8 +692,6 @@ Connection ~ 4450 4250
 Wire Wire Line
 	4450 4250 4450 4450
 Wire Wire Line
-	5600 6350 5600 6450
-Wire Wire Line
 	3950 4200 3950 4100
 Wire Wire Line
 	3850 4200 3850 4100
@@ -863,4 +757,48 @@ Wire Wire Line
 	4900 2150 4900 2050
 Wire Wire Line
 	4800 2150 4800 2050
+Text GLabel 7200 1450 1    60   Input ~ 0
+LED1_B
+Text GLabel 7300 1450 1    60   Input ~ 0
+LED1_G
+Text GLabel 7400 1450 1    60   Input ~ 0
+LED1_R
+Text GLabel 7700 1450 1    60   Input ~ 0
+LED2_B
+Text GLabel 7800 1450 1    60   Input ~ 0
+LED2_G
+Text GLabel 7900 1450 1    60   Input ~ 0
+LED2_R
+Text GLabel 4600 2150 3    60   Input ~ 0
+LED3_B
+Text GLabel 4500 2150 3    60   Input ~ 0
+LED3_G
+Text GLabel 4400 2150 3    60   Input ~ 0
+LED3_R
+Wire Wire Line
+	4600 2150 4600 2050
+Wire Wire Line
+	4500 2150 4500 2050
+Wire Wire Line
+	4400 2150 4400 2050
+Text GLabel 7500 1450 1    60   Input ~ 0
+Button1
+Text GLabel 7600 1450 1    60   Input ~ 0
+Button2
+Wire Wire Line
+	7200 1550 7200 1450
+Wire Wire Line
+	7300 1550 7300 1450
+Wire Wire Line
+	7400 1550 7400 1450
+Wire Wire Line
+	7500 1550 7500 1450
+Wire Wire Line
+	7600 1550 7600 1450
+Wire Wire Line
+	7700 1550 7700 1450
+Wire Wire Line
+	7800 1550 7800 1450
+Wire Wire Line
+	7900 1550 7900 1450
 $EndSCHEMATC

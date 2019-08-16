@@ -1,0 +1,389 @@
+EESchema Schematic File Version 4
+LIBS:bottom-board-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title "MOD Duo -HMI testing board"
+Date ""
+Rev "1.0"
+Comp "MOD Devices GmbH"
+Comment1 "Controller board Tester"
+Comment2 "used for the MOD Duo"
+Comment3 "or MOD Duo X controller"
+Comment4 "Compatible w/ Marsboard SoM"
+$EndDescr
+$Comp
+L Device:LED_RGB D4
+U 1 1 5CF7BCC5
+P 2700 1600
+F 0 "D4" H 2700 2097 50  0000 C CNN
+F 1 "LED_RGB" H 2700 2006 50  0000 C CNN
+F 2 "LED_SMD:LED_Avago_PLCC6_3x2.8mm" H 2700 1550 50  0001 C CNN
+F 3 "~" H 2700 1550 50  0001 C CNN
+	1    2700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L bottom-board-rescue:R R4
+U 1 1 5CF7CB2B
+P 3200 1600
+F 0 "R4" V 2993 1600 50  0000 C CNN
+F 1 "100" V 3084 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 1600 50  0001 C CNN
+F 3 "" H 3200 1600 50  0001 C CNN
+	1    3200 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L bottom-board-rescue:R R5
+U 1 1 5CF7D477
+P 3200 1800
+F 0 "R5" V 2993 1800 50  0000 C CNN
+F 1 "100" V 3084 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 1800 50  0001 C CNN
+F 3 "" H 3200 1800 50  0001 C CNN
+	1    3200 1800
+	0    1    1    0   
+$EndComp
+Text GLabel 3600 1400 2    60   Input ~ 0
+LED1_B
+Text GLabel 3600 1600 2    60   Input ~ 0
+LED1_G
+Text GLabel 3600 1800 2    60   Input ~ 0
+LED1_R
+$Comp
+L bottom-board-rescue:GNDD-power #PWR0104
+U 1 1 5CF7D9B1
+P 2150 1600
+F 0 "#PWR0104" H 2150 1350 50  0001 C CNN
+F 1 "GNDD-power" V 2154 1491 50  0000 R CNN
+F 2 "" H 2150 1600 50  0001 C CNN
+F 3 "" H 2150 1600 50  0001 C CNN
+	1    2150 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 1400 3350 1400
+Wire Wire Line
+	3600 1600 3350 1600
+Wire Wire Line
+	3600 1800 3350 1800
+Wire Wire Line
+	3050 1800 2900 1800
+Wire Wire Line
+	3050 1600 2900 1600
+Wire Wire Line
+	3050 1400 2900 1400
+Wire Wire Line
+	2500 1400 2350 1400
+Wire Wire Line
+	2350 1400 2350 1600
+Wire Wire Line
+	2350 1600 2150 1600
+Wire Wire Line
+	2500 1600 2350 1600
+Connection ~ 2350 1600
+Wire Wire Line
+	2500 1800 2350 1800
+Wire Wire Line
+	2350 1800 2350 1600
+$Comp
+L Device:LED_RGB D5
+U 1 1 5CF8364E
+P 2700 2600
+F 0 "D5" H 2700 3097 50  0000 C CNN
+F 1 "LED_RGB" H 2700 3006 50  0000 C CNN
+F 2 "LED_SMD:LED_Avago_PLCC6_3x2.8mm" H 2700 2550 50  0001 C CNN
+F 3 "~" H 2700 2550 50  0001 C CNN
+	1    2700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L bottom-board-rescue:R R6
+U 1 1 5CF83654
+P 3200 2400
+F 0 "R6" V 2993 2400 50  0000 C CNN
+F 1 "100" V 3084 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 2400 50  0001 C CNN
+F 3 "" H 3200 2400 50  0001 C CNN
+	1    3200 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L bottom-board-rescue:R R7
+U 1 1 5CF8365A
+P 3200 2600
+F 0 "R7" V 2993 2600 50  0000 C CNN
+F 1 "100" V 3084 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 2600 50  0001 C CNN
+F 3 "" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L bottom-board-rescue:R R8
+U 1 1 5CF83660
+P 3200 2800
+F 0 "R8" V 2993 2800 50  0000 C CNN
+F 1 "100" V 3084 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 2800 50  0001 C CNN
+F 3 "" H 3200 2800 50  0001 C CNN
+	1    3200 2800
+	0    1    1    0   
+$EndComp
+Text GLabel 3600 2400 2    60   Input ~ 0
+LED2_B
+Text GLabel 3600 2600 2    60   Input ~ 0
+LED2_G
+Text GLabel 3600 2800 2    60   Input ~ 0
+LED2_R
+$Comp
+L bottom-board-rescue:GNDD-power #PWR0105
+U 1 1 5CF83669
+P 2150 2600
+F 0 "#PWR0105" H 2150 2350 50  0001 C CNN
+F 1 "GNDD-power" V 2154 2491 50  0000 R CNN
+F 2 "" H 2150 2600 50  0001 C CNN
+F 3 "" H 2150 2600 50  0001 C CNN
+	1    2150 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 2400 3350 2400
+Wire Wire Line
+	3600 2600 3350 2600
+Wire Wire Line
+	3600 2800 3350 2800
+Wire Wire Line
+	3050 2800 2900 2800
+Wire Wire Line
+	3050 2600 2900 2600
+Wire Wire Line
+	3050 2400 2900 2400
+Wire Wire Line
+	2500 2400 2350 2400
+Wire Wire Line
+	2350 2400 2350 2600
+Wire Wire Line
+	2350 2600 2150 2600
+Wire Wire Line
+	2500 2600 2350 2600
+Connection ~ 2350 2600
+Wire Wire Line
+	2500 2800 2350 2800
+Wire Wire Line
+	2350 2800 2350 2600
+$Comp
+L Device:LED_RGB D6
+U 1 1 5CF87B4F
+P 2700 3550
+F 0 "D6" H 2700 4047 50  0000 C CNN
+F 1 "LED_RGB" H 2700 3956 50  0000 C CNN
+F 2 "LED_SMD:LED_Avago_PLCC6_3x2.8mm" H 2700 3500 50  0001 C CNN
+F 3 "~" H 2700 3500 50  0001 C CNN
+	1    2700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L bottom-board-rescue:R R9
+U 1 1 5CF87B55
+P 3200 3350
+F 0 "R9" V 2993 3350 50  0000 C CNN
+F 1 "100" V 3084 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 3350 50  0001 C CNN
+F 3 "" H 3200 3350 50  0001 C CNN
+	1    3200 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L bottom-board-rescue:R R10
+U 1 1 5CF87B5B
+P 3200 3550
+F 0 "R10" V 2993 3550 50  0000 C CNN
+F 1 "100" V 3084 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 3550 50  0001 C CNN
+F 3 "" H 3200 3550 50  0001 C CNN
+	1    3200 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L bottom-board-rescue:R R11
+U 1 1 5CF87B61
+P 3200 3750
+F 0 "R11" V 2993 3750 50  0000 C CNN
+F 1 "100" V 3084 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 3750 50  0001 C CNN
+F 3 "" H 3200 3750 50  0001 C CNN
+	1    3200 3750
+	0    1    1    0   
+$EndComp
+Text GLabel 3600 3350 2    60   Input ~ 0
+LED3_B
+Text GLabel 3600 3550 2    60   Input ~ 0
+LED3_G
+Text GLabel 3600 3750 2    60   Input ~ 0
+LED3_R
+$Comp
+L bottom-board-rescue:GNDD-power #PWR0106
+U 1 1 5CF87B6A
+P 2150 3550
+F 0 "#PWR0106" H 2150 3300 50  0001 C CNN
+F 1 "GNDD-power" V 2154 3441 50  0000 R CNN
+F 2 "" H 2150 3550 50  0001 C CNN
+F 3 "" H 2150 3550 50  0001 C CNN
+	1    2150 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3350 3350 3350
+Wire Wire Line
+	3600 3550 3350 3550
+Wire Wire Line
+	3600 3750 3350 3750
+Wire Wire Line
+	3050 3750 2900 3750
+Wire Wire Line
+	3050 3550 2900 3550
+Wire Wire Line
+	3050 3350 2900 3350
+Wire Wire Line
+	2500 3350 2350 3350
+Wire Wire Line
+	2350 3350 2350 3550
+Wire Wire Line
+	2350 3550 2150 3550
+Wire Wire Line
+	2500 3550 2350 3550
+Connection ~ 2350 3550
+Wire Wire Line
+	2500 3750 2350 3750
+Wire Wire Line
+	2350 3750 2350 3550
+$Comp
+L bottom-board-rescue:R R3
+U 1 1 5CF7ECF7
+P 3200 1400
+F 0 "R3" V 2993 1400 50  0000 C CNN
+F 1 "100" V 3084 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 1400 50  0001 C CNN
+F 3 "" H 3200 1400 50  0001 C CNN
+	1    3200 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L bottom-board-rescue:R R12
+U 1 1 5CF8BFAC
+P 7100 1450
+F 0 "R12" V 6893 1450 50  0000 C CNN
+F 1 "10K" V 6984 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7030 1450 50  0001 C CNN
+F 3 "" H 7100 1450 50  0001 C CNN
+	1    7100 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L bottom-board-rescue:+5V-power #PWR0107
+U 1 1 5CF8D532
+P 7100 1200
+F 0 "#PWR0107" H 7100 1050 50  0001 C CNN
+F 1 "+5V-power" H 7115 1373 50  0000 C CNN
+F 2 "" H 7100 1200 50  0001 C CNN
+F 3 "" H 7100 1200 50  0001 C CNN
+	1    7100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L bottom-board-rescue:SW_PUSH SW2
+U 1 1 5CF8DE79
+P 6300 1700
+F 0 "SW2" H 6300 2045 50  0000 C CNN
+F 1 "SW_PUSH" H 6300 1954 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 6300 1863 50  0000 C CNN
+F 3 "" H 6300 1700 50  0000 C CNN
+	1    6300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L bottom-board-rescue:GNDD-power #PWR0108
+U 1 1 5CF8F403
+P 5800 1700
+F 0 "#PWR0108" H 5800 1450 50  0001 C CNN
+F 1 "GNDD-power" V 5804 1591 50  0000 R CNN
+F 2 "" H 5800 1700 50  0001 C CNN
+F 3 "" H 5800 1700 50  0001 C CNN
+	1    5800 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 1700 6000 1700
+Wire Wire Line
+	6600 1700 7100 1700
+Wire Wire Line
+	7100 1700 7100 1600
+Wire Wire Line
+	7100 1300 7100 1200
+Text GLabel 7450 1700 2    60   Input ~ 0
+Button1
+Wire Wire Line
+	7450 1700 7100 1700
+Connection ~ 7100 1700
+$Comp
+L bottom-board-rescue:R R13
+U 1 1 5CF939E5
+P 7100 2550
+F 0 "R13" V 6893 2550 50  0000 C CNN
+F 1 "10K" V 6984 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7030 2550 50  0001 C CNN
+F 3 "" H 7100 2550 50  0001 C CNN
+	1    7100 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L bottom-board-rescue:+5V-power #PWR0109
+U 1 1 5CF939EB
+P 7100 2300
+F 0 "#PWR0109" H 7100 2150 50  0001 C CNN
+F 1 "+5V-power" H 7115 2473 50  0000 C CNN
+F 2 "" H 7100 2300 50  0001 C CNN
+F 3 "" H 7100 2300 50  0001 C CNN
+	1    7100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L bottom-board-rescue:SW_PUSH SW3
+U 1 1 5CF939F1
+P 6300 2800
+F 0 "SW3" H 6300 3145 50  0000 C CNN
+F 1 "SW_PUSH" H 6300 3054 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 6300 2963 50  0000 C CNN
+F 3 "" H 6300 2800 50  0000 C CNN
+	1    6300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L bottom-board-rescue:GNDD-power #PWR0110
+U 1 1 5CF939F7
+P 5800 2800
+F 0 "#PWR0110" H 5800 2550 50  0001 C CNN
+F 1 "GNDD-power" V 5804 2691 50  0000 R CNN
+F 2 "" H 5800 2800 50  0001 C CNN
+F 3 "" H 5800 2800 50  0001 C CNN
+	1    5800 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 2800 6000 2800
+Wire Wire Line
+	6600 2800 7100 2800
+Wire Wire Line
+	7100 2800 7100 2700
+Wire Wire Line
+	7100 2400 7100 2300
+Text GLabel 7450 2800 2    60   Input ~ 0
+Button2
+Wire Wire Line
+	7450 2800 7100 2800
+Connection ~ 7100 2800
+$EndSCHEMATC
