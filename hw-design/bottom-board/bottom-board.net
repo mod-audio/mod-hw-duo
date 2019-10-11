@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "/home/jan/Mod Github HW/mod-hw-duo/hw-design/bottom-board/bottom-board.sch")
-    (date "Tue 18 Jun 2019 02:38:23 PM CEST")
+    (source "/home/jan/Mod Github HW/Duo with updated parts/mod-hw-duo/hw-design/bottom-board/bottom-board.sch")
+    (date "Fri 11 Oct 2019 04:05:55 PM CEST")
     (tool "Eeschema 5.1.2-f72e74a~84~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -146,7 +146,7 @@
       (tstamp 54F878FE))
     (comp (ref C1)
       (value 100nF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608X7R1E104K080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -162,7 +162,7 @@
       (tstamp 54F8818E))
     (comp (ref C9)
       (value 100nF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608X7R1E104K080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -170,7 +170,7 @@
       (tstamp 54F886BD))
     (comp (ref C10)
       (value 100nF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608X7R1E104K080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -186,7 +186,7 @@
       (tstamp 5506F1AF))
     (comp (ref C4)
       (value 100nF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608X7R1E104K080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -202,7 +202,7 @@
       (tstamp 550E1EA8))
     (comp (ref C5)
       (value 100nF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608X7R1E104K080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -234,7 +234,7 @@
       (tstamp 5618A3AB))
     (comp (ref C7)
       (value 10uF)
-      (footprint Capacitors_SMD:C_0805)
+      (footprint Capacitor_SMD:C_0805_2012Metric)
       (fields
         (field (name MPN) GRM219R61E106KA12D))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -244,13 +244,13 @@
       (value 10uF)
       (footprint Capacitor_SMD:C_0805_2012Metric)
       (fields
-        (field (name MPN) UWX1E100MCL1GB))
+        (field (name MPN) GRM219R61E106KA12D))
       (libsource (lib bottom-board-rescue) (part C_Small-Device) (description ""))
       (sheetpath (names /power/) (tstamps /54F7244B/))
       (tstamp 5660158D))
     (comp (ref C3)
       (value 10uF)
-      (footprint Capacitors_SMD:C_0805)
+      (footprint Capacitor_SMD:C_0805_2012Metric)
       (fields
         (field (name MPN) GRM219R61E106KA12D))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -274,7 +274,7 @@
       (value 10uF)
       (footprint Capacitor_SMD:C_0805_2012Metric)
       (fields
-        (field (name MPN) UWX1E100MCL1GB))
+        (field (name MPN) GRM219R61E106KA12D))
       (libsource (lib bottom-board-rescue) (part C_Small-Device) (description ""))
       (sheetpath (names /power/) (tstamps /54F7244B/))
       (tstamp 5C9A5B72))
@@ -290,7 +290,7 @@
       (value 22R)
       (footprint Resistor_SMD:R_0603_1608Metric)
       (fields
-        (field (name MPN) RMCF0603JT100R))
+        (field (name MPN) RMCF0603JT22R0))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
       (sheetpath (names /audio-codec/) (tstamps /54F72B97/))
       (tstamp 550330AB))
@@ -298,7 +298,7 @@
       (value 22R)
       (footprint Resistor_SMD:R_0603_1608Metric)
       (fields
-        (field (name MPN) RMCF0603JT100R))
+        (field (name MPN) RMCF0603JT22R0))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
       (sheetpath (names /audio-codec/) (tstamps /54F72B97/))
       (tstamp 55033210))
@@ -521,7 +521,7 @@
       (value 10uF)
       (footprint Capacitor_SMD:C_0805_2012Metric)
       (fields
-        (field (name MPN) C2012X7R1E105K125AB))
+        (field (name MPN) GRM219R61E106KA12D))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
       (sheetpath (names /audio-codec/) (tstamps /54F72B97/))
       (tstamp 5C69F7F0))
@@ -614,7 +614,7 @@
       (tstamp 551A8356))
     (comp (ref R16)
       (value 2k7)
-      (footprint Resistors_SMD:R_0603)
+      (footprint Resistor_SMD:R_0603_1608Metric)
       (fields
         (field (name MPN) RMCF0603JT2K70))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -622,7 +622,7 @@
       (tstamp 55FB0BD7))
     (comp (ref R15)
       (value 2k7)
-      (footprint Resistors_SMD:R_0603)
+      (footprint Resistor_SMD:R_0603_1608Metric)
       (fields
         (field (name MPN) RMCF0603JT2K70))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -876,7 +876,7 @@
       (tstamp 5510822E))
     (comp (ref U6)
       (value LM4562)
-      (footprint Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm_ThermalVias)
+      (footprint Package_SO:SOIC-8_3.9x4.9mm_P1.27mm)
       (fields
         (field (name MPN) LM4562MAX/NOPB))
       (libsource (lib bottom-board-rescue) (part OP275) (description ""))
@@ -1004,7 +1004,7 @@
       (tstamp 5517BC45))
     (comp (ref RA16)
       (value 100R)
-      (footprint Resistors_SMD:R_0603)
+      (footprint Resistor_SMD:R_0603_1608Metric)
       (fields
         (field (name MPN) ERA-3AEB101V))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -1260,7 +1260,7 @@
       (tstamp 5511ABA7))
     (comp (ref U7)
       (value LM4562)
-      (footprint Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm_ThermalVias)
+      (footprint Package_SO:SOIC-8_3.9x4.9mm_P1.27mm)
       (fields
         (field (name MPN) LM4562MAX/NOPB))
       (libsource (lib bottom-board-rescue) (part OP275) (description ""))
@@ -1268,7 +1268,7 @@
       (tstamp 5511F6EB))
     (comp (ref U8)
       (value LM4562)
-      (footprint Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm_ThermalVias)
+      (footprint Package_SO:SOIC-8_3.9x4.9mm_P1.27mm)
       (fields
         (field (name MPN) LM4562MAX/NOPB))
       (libsource (lib bottom-board-rescue) (part OP275) (description ""))
@@ -1356,7 +1356,7 @@
       (tstamp 5518B08E))
     (comp (ref C43)
       (value 100nF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608X7R1E104K080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -1372,7 +1372,7 @@
       (tstamp 5518B147))
     (comp (ref CA14)
       (value 33pF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608C0G1H330J080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -1388,7 +1388,7 @@
       (tstamp 5518B15F))
     (comp (ref CA16)
       (value 47pF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608C0G1H470J080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -1542,7 +1542,7 @@
       (value 100uF)
       (footprint Capacitor_SMD:CP_Elec_6.3x7.7)
       (fields
-        (field (name MPN) EEE-FT1C101AR))
+        (field (name MPN) UWT1E101MCL1GS))
       (libsource (lib bottom-board-rescue) (part CP_Small) (description ""))
       (sheetpath (names /audio-headphones/) (tstamps /54F72F64/))
       (tstamp 550E5193))
@@ -1558,7 +1558,7 @@
       (value 100uF)
       (footprint Capacitor_SMD:CP_Elec_6.3x7.7)
       (fields
-        (field (name MPN) EEE-FT1C101AR))
+        (field (name MPN) UWT1E101MCL1GS))
       (libsource (lib bottom-board-rescue) (part CP_Small) (description ""))
       (sheetpath (names /audio-headphones/) (tstamps /54F72F64/))
       (tstamp 550E8C8D))
@@ -1614,7 +1614,7 @@
       (value 100nF)
       (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
-        (field (name MPN) C1005X7R1E104K050BB))
+        (field (name MPN) C1608X7R1E104K080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
       (sheetpath (names /audio-headphones/) (tstamps /54F72F64/))
       (tstamp 5C99E218))
@@ -1741,7 +1741,7 @@
       (tstamp 552ECCA3))
     (comp (ref R47)
       (value 220R)
-      (footprint Resistors_SMD:R_0805)
+      (footprint Resistor_SMD:R_0805_2012Metric)
       (fields
         (field (name MPN) ERJ-P06J221V))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -1757,7 +1757,7 @@
       (tstamp 550EB3B5))
     (comp (ref R49)
       (value 220R)
-      (footprint Resistors_SMD:R_0805)
+      (footprint Resistor_SMD:R_0805_2012Metric)
       (fields
         (field (name MPN) ERJ-P06J221V))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -1765,7 +1765,7 @@
       (tstamp 550EE5CB))
     (comp (ref R50)
       (value 220R)
-      (footprint Resistors_SMD:R_0805)
+      (footprint Resistor_SMD:R_0805_2012Metric)
       (fields
         (field (name MPN) ERJ-P06J221V))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -1773,7 +1773,7 @@
       (tstamp 550EEE00))
     (comp (ref R51)
       (value 10k)
-      (footprint Resistors_SMD:R_0603)
+      (footprint Resistor_SMD:R_0603_1608Metric)
       (fields
         (field (name MPN) RMCF0603JT10K0))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -1781,7 +1781,7 @@
       (tstamp 550EEF86))
     (comp (ref R52)
       (value 10k)
-      (footprint Resistors_SMD:R_0603)
+      (footprint Resistor_SMD:R_0603_1608Metric)
       (fields
         (field (name MPN) RMCF0603JT10K0))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -1789,7 +1789,7 @@
       (tstamp 550EFE8C))
     (comp (ref R48)
       (value 10k)
-      (footprint Resistors_SMD:R_0603)
+      (footprint Resistor_SMD:R_0603_1608Metric)
       (fields
         (field (name MPN) RMCF0603JT10K0))
       (libsource (lib bottom-board-rescue) (part R_Small) (description ""))
@@ -1813,7 +1813,7 @@
       (tstamp 5518A50A))
     (comp (ref C53)
       (value 100nF)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Capacitor_SMD:C_0603_1608Metric)
       (fields
         (field (name MPN) C1608X7R1E104K080AA))
       (libsource (lib bottom-board-rescue) (part C_Small) (description ""))
@@ -2770,7 +2770,7 @@
     (library (logical Connector)
       (uri /usr/share/kicad/library/Connector.lib))
     (library (logical bottom-board-rescue)
-      (uri "/home/jan/Mod Github HW/mod-hw-duo/hw-design/bottom-board/bottom-board-rescue.lib")))
+      (uri "/home/jan/Mod Github HW/Duo with updated parts/mod-hw-duo/hw-design/bottom-board/bottom-board-rescue.lib")))
   (nets
     (net (code 1) (name "Net-(D1-Pad2)")
       (node (ref F1) (pin 2))

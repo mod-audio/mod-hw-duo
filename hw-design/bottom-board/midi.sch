@@ -305,7 +305,7 @@ MIDI_UART_TX
 Wire Wire Line
 	4100 3450 4050 3450
 Wire Wire Line
-	4100 3100 4100 3450
+	4100 3100 4100 3150
 Wire Wire Line
 	4050 3750 4200 3750
 Wire Wire Line
@@ -313,11 +313,11 @@ Wire Wire Line
 Wire Wire Line
 	4100 3850 4100 3950
 Wire Wire Line
-	2950 3550 3450 3550
+	2950 3550 3150 3550
 Wire Wire Line
 	3150 3650 3150 3550
 Wire Wire Line
-	3250 3750 3250 4350
+	3250 3750 3250 3900
 Wire Wire Line
 	3250 3750 3450 3750
 Wire Wire Line
@@ -343,7 +343,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 3200 7950 3250
 Wire Wire Line
-	7950 3450 7950 3650
+	7950 3450 7950 3550
 Wire Wire Line
 	7800 3550 7950 3550
 Wire Wire Line
@@ -353,7 +353,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 3450 8500 3550
 Wire Wire Line
-	8500 3750 8500 3950
+	8500 3750 8500 3850
 Wire Wire Line
 	8500 4350 8500 4450
 Wire Notes Line
@@ -369,7 +369,7 @@ Wire Notes Line
 Wire Notes Line
 	9950 4700 9950 2750
 Wire Wire Line
-	4400 3750 4650 3750
+	4400 3750 4500 3750
 Wire Wire Line
 	8800 4150 8950 4150
 Wire Wire Line
@@ -400,4 +400,16 @@ NoConn ~ 7450 3350
 NoConn ~ 2250 3750
 NoConn ~ 2650 3350
 NoConn ~ 1850 3350
+Wire Wire Line
+	3150 3550 3450 3550
+Wire Wire Line
+	3250 3900 3250 4350
+Wire Wire Line
+	7950 3550 7950 3650
+Wire Wire Line
+	8500 3850 8500 3950
+Wire Wire Line
+	4500 3750 4650 3750
+Wire Wire Line
+	4100 3150 4100 3450
 $EndSCHEMATC
